@@ -1,0 +1,34 @@
+version: 1
+project:
+  title: Quantum Computing for the Quantum Curious
+  short_title: Quantum Computing
+  authors:
+    - name: Ciaran Hughes
+    - name: Joshua Isaacson
+    - name: Anastasia Perry
+    - name: Ranbel F. Sun
+    - name: Jessica Turner
+  date: 2021-01-01
+  doi: 10.1007/978-3-030-61601-4
+  license: CC-BY-4.0
+  open_access: true
+  github: QuadriviumPress/QuantumComputingForTheQuantumCurious
+  toc:
+    - file: index.md
+    - file: chapters/ch-01-introduction-to-superposition.md
+    - file: chapters/ch-02-what-is-a-qubit.md
+    - file: chapters/ch-03-creating-superposition-the-beam-splitter.md
+    - file: chapters/ch-04-creating-superposition-stern-gerlach.md
+    - file: chapters/ch-05-quantum-cryptography.md
+    - file: chapters/ch-06-quantum-gates.md
+    - file: chapters/ch-07-entanglement.md
+    - file: chapters/ch-08-quantum-teleportation.md
+    - file: chapters/ch-09-quantum-algorithms.md
+    - file: chapters/ch-10-worksheets.md
+site:
+  template: book-theme
+  title: Quantum Computing for the Quantum Curious
+  actions:
+    - title: Springer Open Access Book
+      url: https://link.springer.com/book/10.1007/978-3-030-61601-4
+  nav: []

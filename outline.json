@@ -1,0 +1,223 @@
+{
+  "book": {
+    "title": "Quantum Computing for the Quantum Curious",
+    "authors": [
+      "Ciaran Hughes",
+      "Joshua Isaacson",
+      "Anastasia Perry",
+      "Ranbel F. Sun",
+      "Jessica Turner"
+    ],
+    "date": 2021,
+    "doi": "10.1007/978-3-030-61601-4",
+    "license": "CC-BY-4.0",
+    "source_url": "https://link.springer.com/book/10.1007/978-3-030-61601-4",
+    "pdf_pages": 159
+  },
+  "chapters": [
+    {
+      "number": 1,
+      "title": "Introduction to Superposition",
+      "slug": "ch-01-introduction-to-superposition",
+      "sources": {
+        "xhtml": "/home/veillette/QuadriviumPress/QuantumComputingForTheQuantumCurious/work/epub/extract/OEBPS/html/490703_1_En_1_Chapter.xhtml",
+        "math": "/home/veillette/QuadriviumPress/QuantumComputingForTheQuantumCurious/work/epub/math_ch01.json",
+        "figures": "/home/veillette/QuadriviumPress/QuantumComputingForTheQuantumCurious/work/epub/figures_ch01.json",
+        "pdf_text_dir": "work/text",
+        "pdf_pages": "15-20"
+      },
+      "source_counts": {
+        "figures": 5,
+        "display_eq": 0,
+        "inline_eq": 8,
+        "tables": 0,
+        "eq_missing_alt": 6
+      },
+      "notes": []
+    },
+    {
+      "number": 2,
+      "title": "What Is a Qubit?",
+      "slug": "ch-02-what-is-a-qubit",
+      "sources": {
+        "xhtml": "/home/veillette/QuadriviumPress/QuantumComputingForTheQuantumCurious/work/epub/extract/OEBPS/html/490703_1_En_2_Chapter.xhtml",
+        "math": "/home/veillette/QuadriviumPress/QuantumComputingForTheQuantumCurious/work/epub/math_ch02.json",
+        "figures": "/home/veillette/QuadriviumPress/QuantumComputingForTheQuantumCurious/work/epub/figures_ch02.json",
+        "pdf_text_dir": "work/text",
+        "pdf_pages": "21-30"
+      },
+      "source_counts": {
+        "figures": 5,
+        "display_eq": 15,
+        "inline_eq": 43,
+        "tables": 1,
+        "eq_missing_alt": 16
+      },
+      "notes": []
+    },
+    {
+      "number": 3,
+      "title": "Creating Superposition: The Beam Splitter",
+      "slug": "ch-03-creating-superposition-the-beam-splitter",
+      "sources": {
+        "xhtml": "/home/veillette/QuadriviumPress/QuantumComputingForTheQuantumCurious/work/epub/extract/OEBPS/html/490703_1_En_3_Chapter.xhtml",
+        "math": "/home/veillette/QuadriviumPress/QuantumComputingForTheQuantumCurious/work/epub/math_ch03.json",
+        "figures": "/home/veillette/QuadriviumPress/QuantumComputingForTheQuantumCurious/work/epub/figures_ch03.json",
+        "pdf_text_dir": "work/text",
+        "pdf_pages": "31-42"
+      },
+      "source_counts": {
+        "figures": 13,
+        "display_eq": 2,
+        "inline_eq": 10,
+        "tables": 0,
+        "eq_missing_alt": 8
+      },
+      "notes": []
+    },
+    {
+      "number": 4,
+      "title": "Creating Superposition: Stern–Gerlach",
+      "slug": "ch-04-creating-superposition-stern-gerlach",
+      "sources": {
+        "xhtml": "/home/veillette/QuadriviumPress/QuantumComputingForTheQuantumCurious/work/epub/extract/OEBPS/html/490703_1_En_4_Chapter.xhtml",
+        "math": "/home/veillette/QuadriviumPress/QuantumComputingForTheQuantumCurious/work/epub/math_ch04.json",
+        "figures": "/home/veillette/QuadriviumPress/QuantumComputingForTheQuantumCurious/work/epub/figures_ch04.json",
+        "pdf_text_dir": "work/text",
+        "pdf_pages": "43-54"
+      },
+      "source_counts": {
+        "figures": 18,
+        "display_eq": 9,
+        "inline_eq": 56,
+        "tables": 0,
+        "eq_missing_alt": 17
+      },
+      "notes": []
+    },
+    {
+      "number": 5,
+      "title": "Quantum Cryptography",
+      "slug": "ch-05-quantum-cryptography",
+      "sources": {
+        "xhtml": "/home/veillette/QuadriviumPress/QuantumComputingForTheQuantumCurious/work/epub/extract/OEBPS/html/490703_1_En_5_Chapter.xhtml",
+        "math": "/home/veillette/QuadriviumPress/QuantumComputingForTheQuantumCurious/work/epub/math_ch05.json",
+        "figures": "/home/veillette/QuadriviumPress/QuantumComputingForTheQuantumCurious/work/epub/figures_ch05.json",
+        "pdf_text_dir": "work/text",
+        "pdf_pages": "55-62"
+      },
+      "source_counts": {
+        "figures": 3,
+        "display_eq": 0,
+        "inline_eq": 14,
+        "tables": 1,
+        "eq_missing_alt": 14
+      },
+      "notes": []
+    },
+    {
+      "number": 6,
+      "title": "Quantum Gates",
+      "slug": "ch-06-quantum-gates",
+      "sources": {
+        "xhtml": "/home/veillette/QuadriviumPress/QuantumComputingForTheQuantumCurious/work/epub/extract/OEBPS/html/490703_1_En_6_Chapter.xhtml",
+        "math": "/home/veillette/QuadriviumPress/QuantumComputingForTheQuantumCurious/work/epub/math_ch06.json",
+        "figures": "/home/veillette/QuadriviumPress/QuantumComputingForTheQuantumCurious/work/epub/figures_ch06.json",
+        "pdf_text_dir": "work/text",
+        "pdf_pages": "63-71"
+      },
+      "source_counts": {
+        "figures": 8,
+        "display_eq": 12,
+        "inline_eq": 25,
+        "tables": 0,
+        "eq_missing_alt": 23
+      },
+      "notes": []
+    },
+    {
+      "number": 7,
+      "title": "Entanglement",
+      "slug": "ch-07-entanglement",
+      "sources": {
+        "xhtml": "/home/veillette/QuadriviumPress/QuantumComputingForTheQuantumCurious/work/epub/extract/OEBPS/html/490703_1_En_7_Chapter.xhtml",
+        "math": "/home/veillette/QuadriviumPress/QuantumComputingForTheQuantumCurious/work/epub/math_ch07.json",
+        "figures": "/home/veillette/QuadriviumPress/QuantumComputingForTheQuantumCurious/work/epub/figures_ch07.json",
+        "pdf_text_dir": "work/text",
+        "pdf_pages": "72-84"
+      },
+      "source_counts": {
+        "figures": 11,
+        "display_eq": 5,
+        "inline_eq": 48,
+        "tables": 1,
+        "eq_missing_alt": 22
+      },
+      "notes": []
+    },
+    {
+      "number": 8,
+      "title": "Quantum Teleportation",
+      "slug": "ch-08-quantum-teleportation",
+      "sources": {
+        "xhtml": "/home/veillette/QuadriviumPress/QuantumComputingForTheQuantumCurious/work/epub/extract/OEBPS/html/490703_1_En_8_Chapter.xhtml",
+        "math": "/home/veillette/QuadriviumPress/QuantumComputingForTheQuantumCurious/work/epub/math_ch08.json",
+        "figures": "/home/veillette/QuadriviumPress/QuantumComputingForTheQuantumCurious/work/epub/figures_ch08.json",
+        "pdf_text_dir": "work/text",
+        "pdf_pages": "85-91"
+      },
+      "source_counts": {
+        "figures": 6,
+        "display_eq": 6,
+        "inline_eq": 13,
+        "tables": 0,
+        "eq_missing_alt": 10
+      },
+      "notes": []
+    },
+    {
+      "number": 9,
+      "title": "Quantum Algorithms",
+      "slug": "ch-09-quantum-algorithms",
+      "sources": {
+        "xhtml": "/home/veillette/QuadriviumPress/QuantumComputingForTheQuantumCurious/work/epub/extract/OEBPS/html/490703_1_En_9_Chapter.xhtml",
+        "math": "/home/veillette/QuadriviumPress/QuantumComputingForTheQuantumCurious/work/epub/math_ch09.json",
+        "figures": "/home/veillette/QuadriviumPress/QuantumComputingForTheQuantumCurious/work/epub/figures_ch09.json",
+        "pdf_text_dir": "work/text",
+        "pdf_pages": "92-103"
+      },
+      "source_counts": {
+        "figures": 7,
+        "display_eq": 8,
+        "inline_eq": 19,
+        "tables": 1,
+        "eq_missing_alt": 11
+      },
+      "notes": []
+    },
+    {
+      "number": 10,
+      "title": "Worksheets",
+      "slug": "ch-10-worksheets",
+      "sources": {
+        "xhtml": "/home/veillette/QuadriviumPress/QuantumComputingForTheQuantumCurious/work/epub/extract/OEBPS/html/490703_1_En_10_Chapter.xhtml",
+        "math": "/home/veillette/QuadriviumPress/QuantumComputingForTheQuantumCurious/work/epub/math_ch10.json",
+        "figures": "/home/veillette/QuadriviumPress/QuantumComputingForTheQuantumCurious/work/epub/figures_ch10.json",
+        "pdf_text_dir": "work/text",
+        "pdf_pages": "104-EOF"
+      },
+      "source_counts": {
+        "figures": 20,
+        "display_eq": 0,
+        "inline_eq": 21,
+        "tables": 12,
+        "eq_missing_alt": 13
+      },
+      "notes": []
+    }
+  ],
+  "references": {
+    "source": "none",
+    "count": 0
+  }
+}
