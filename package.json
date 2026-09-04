@@ -1,0 +1,12 @@
+{
+  "name": "quantum-computing-for-the-quantum-curious",
+  "private": true,
+  "description": "MyST Markdown edition of Quantum Computing for the Quantum Curious",
+  "scripts": {
+    "start": "myst start",
+    "build": "myst build --html"
+  },
+  "devDependencies": {
+    "mystmd": "1.10.1"
+  }
+}

@@ -21,9 +21,17 @@ The main entry points are:
 - [`chapters/`](chapters/) — the ten converted chapters
 - [`images/`](images/) — EPUB-derived chapter figures
 
-## Live site
+## Build
 
-The book is built with MyST and deployed to GitHub Pages via
-[`.github/workflows/deploy.yml`](.github/workflows/deploy.yml):
+```bash
+npm install
+npm run start          # preview
+npm run build          # static site in _build/html/
+```
+
+CI runs on pull requests (`.github/workflows/ci.yml`); pushes to `main`
+deploy via [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml).
+
+## Live site
 
 https://quadriviumpress.github.io/QuantumComputingForTheQuantumCurious/
