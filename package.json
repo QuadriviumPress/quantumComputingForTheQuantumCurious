@@ -4,9 +4,14 @@
   "description": "MyST Markdown edition of Quantum Computing for the Quantum Curious",
   "scripts": {
     "start": "myst start",
-    "build": "myst build --html"
+    "build": "myst build --html",
+    "verify": "python3 .opencode/skills/book-to-myst/scripts/verify_book.py . --outline outline.json",
+    "check": "npm run verify && npm run build"
   },
   "devDependencies": {
     "mystmd": "1.10.1"
+  },
+  "engines": {
+    "node": ">=22"
   }
 }

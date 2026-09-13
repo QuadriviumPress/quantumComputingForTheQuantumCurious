@@ -2,6 +2,16 @@ version: 1
 project:
   title: Quantum Computing for the Quantum Curious
   short_title: Quantum Computing
+  description: >-
+    An approachable introduction to quantum information and computation,
+    including qubits, gates, cryptography, entanglement, teleportation, and
+    quantum algorithms.
+  keywords:
+    - quantum computing
+    - quantum information
+    - qubits
+    - quantum algorithms
+    - open textbook
   authors:
     - name: Ciaran Hughes
     - name: Joshua Isaacson
@@ -31,4 +41,6 @@ site:
   actions:
     - title: Springer Open Access Book
       url: https://link.springer.com/book/10.1007/978-3-030-61601-4
-  nav: []
+  nav:
+    - title: Sources & Attribution
+      url: https://github.com/QuadriviumPress/QuantumComputingForTheQuantumCurious/blob/main/SOURCES.md

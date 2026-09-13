@@ -26,7 +26,9 @@ The main entry points are:
 ```bash
 npm install
 npm run start          # preview
+npm run verify         # structural and conversion checks
 npm run build          # static site in _build/html/
+npm run check          # verify and build
 ```
 
 CI runs on pull requests (`.github/workflows/ci.yml`); pushes to `main`
@@ -34,4 +36,10 @@ deploy via [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml).
 
 ## Live site
 
-https://quadriviumpress.github.io/QuantumComputingForTheQuantumCurious/
+https://quadriviumpress.com/QuantumComputingForTheQuantumCurious/
+
+## License
+
+© The Author(s) 2021. The original book and this MyST edition are licensed
+under the [Creative Commons Attribution 4.0 International License
+(CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/).
