@@ -36,7 +36,7 @@ deploy via [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml).
 
 ## Live site
 
-https://quadriviumpress.com/QuantumComputingForTheQuantumCurious/
+https://quadriviumpress.com/quantumComputingForTheQuantumCurious/
 
 ## License
 

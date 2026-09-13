@@ -20,9 +20,9 @@
       "title": "Introduction to Superposition",
       "slug": "ch-01-introduction-to-superposition",
       "sources": {
-        "xhtml": "/home/veillette/QuadriviumPress/QuantumComputingForTheQuantumCurious/work/epub/extract/OEBPS/html/490703_1_En_1_Chapter.xhtml",
-        "math": "/home/veillette/QuadriviumPress/QuantumComputingForTheQuantumCurious/work/epub/math_ch01.json",
-        "figures": "/home/veillette/QuadriviumPress/QuantumComputingForTheQuantumCurious/work/epub/figures_ch01.json",
+        "xhtml": "/home/veillette/QuadriviumPress/quantumComputingForTheQuantumCurious/work/epub/extract/OEBPS/html/490703_1_En_1_Chapter.xhtml",
+        "math": "/home/veillette/QuadriviumPress/quantumComputingForTheQuantumCurious/work/epub/math_ch01.json",
+        "figures": "/home/veillette/QuadriviumPress/quantumComputingForTheQuantumCurious/work/epub/figures_ch01.json",
         "pdf_text_dir": "work/text",
         "pdf_pages": "15-20"
       },
@@ -40,9 +40,9 @@
       "title": "What Is a Qubit?",
       "slug": "ch-02-what-is-a-qubit",
       "sources": {
-        "xhtml": "/home/veillette/QuadriviumPress/QuantumComputingForTheQuantumCurious/work/epub/extract/OEBPS/html/490703_1_En_2_Chapter.xhtml",
-        "math": "/home/veillette/QuadriviumPress/QuantumComputingForTheQuantumCurious/work/epub/math_ch02.json",
-        "figures": "/home/veillette/QuadriviumPress/QuantumComputingForTheQuantumCurious/work/epub/figures_ch02.json",
+        "xhtml": "/home/veillette/QuadriviumPress/quantumComputingForTheQuantumCurious/work/epub/extract/OEBPS/html/490703_1_En_2_Chapter.xhtml",
+        "math": "/home/veillette/QuadriviumPress/quantumComputingForTheQuantumCurious/work/epub/math_ch02.json",
+        "figures": "/home/veillette/QuadriviumPress/quantumComputingForTheQuantumCurious/work/epub/figures_ch02.json",
         "pdf_text_dir": "work/text",
         "pdf_pages": "21-30"
       },
@@ -60,9 +60,9 @@
       "title": "Creating Superposition: The Beam Splitter",
       "slug": "ch-03-creating-superposition-the-beam-splitter",
       "sources": {
-        "xhtml": "/home/veillette/QuadriviumPress/QuantumComputingForTheQuantumCurious/work/epub/extract/OEBPS/html/490703_1_En_3_Chapter.xhtml",
-        "math": "/home/veillette/QuadriviumPress/QuantumComputingForTheQuantumCurious/work/epub/math_ch03.json",
-        "figures": "/home/veillette/QuadriviumPress/QuantumComputingForTheQuantumCurious/work/epub/figures_ch03.json",
+        "xhtml": "/home/veillette/QuadriviumPress/quantumComputingForTheQuantumCurious/work/epub/extract/OEBPS/html/490703_1_En_3_Chapter.xhtml",
+        "math": "/home/veillette/QuadriviumPress/quantumComputingForTheQuantumCurious/work/epub/math_ch03.json",
+        "figures": "/home/veillette/QuadriviumPress/quantumComputingForTheQuantumCurious/work/epub/figures_ch03.json",
         "pdf_text_dir": "work/text",
         "pdf_pages": "31-42"
       },
@@ -80,9 +80,9 @@
       "title": "Creating Superposition: Stern–Gerlach",
       "slug": "ch-04-creating-superposition-stern-gerlach",
       "sources": {
-        "xhtml": "/home/veillette/QuadriviumPress/QuantumComputingForTheQuantumCurious/work/epub/extract/OEBPS/html/490703_1_En_4_Chapter.xhtml",
-        "math": "/home/veillette/QuadriviumPress/QuantumComputingForTheQuantumCurious/work/epub/math_ch04.json",
-        "figures": "/home/veillette/QuadriviumPress/QuantumComputingForTheQuantumCurious/work/epub/figures_ch04.json",
+        "xhtml": "/home/veillette/QuadriviumPress/quantumComputingForTheQuantumCurious/work/epub/extract/OEBPS/html/490703_1_En_4_Chapter.xhtml",
+        "math": "/home/veillette/QuadriviumPress/quantumComputingForTheQuantumCurious/work/epub/math_ch04.json",
+        "figures": "/home/veillette/QuadriviumPress/quantumComputingForTheQuantumCurious/work/epub/figures_ch04.json",
         "pdf_text_dir": "work/text",
         "pdf_pages": "43-54"
       },
@@ -100,9 +100,9 @@
       "title": "Quantum Cryptography",
       "slug": "ch-05-quantum-cryptography",
       "sources": {
-        "xhtml": "/home/veillette/QuadriviumPress/QuantumComputingForTheQuantumCurious/work/epub/extract/OEBPS/html/490703_1_En_5_Chapter.xhtml",
-        "math": "/home/veillette/QuadriviumPress/QuantumComputingForTheQuantumCurious/work/epub/math_ch05.json",
-        "figures": "/home/veillette/QuadriviumPress/QuantumComputingForTheQuantumCurious/work/epub/figures_ch05.json",
+        "xhtml": "/home/veillette/QuadriviumPress/quantumComputingForTheQuantumCurious/work/epub/extract/OEBPS/html/490703_1_En_5_Chapter.xhtml",
+        "math": "/home/veillette/QuadriviumPress/quantumComputingForTheQuantumCurious/work/epub/math_ch05.json",
+        "figures": "/home/veillette/QuadriviumPress/quantumComputingForTheQuantumCurious/work/epub/figures_ch05.json",
         "pdf_text_dir": "work/text",
         "pdf_pages": "55-62"
       },
@@ -120,9 +120,9 @@
       "title": "Quantum Gates",
       "slug": "ch-06-quantum-gates",
       "sources": {
-        "xhtml": "/home/veillette/QuadriviumPress/QuantumComputingForTheQuantumCurious/work/epub/extract/OEBPS/html/490703_1_En_6_Chapter.xhtml",
-        "math": "/home/veillette/QuadriviumPress/QuantumComputingForTheQuantumCurious/work/epub/math_ch06.json",
-        "figures": "/home/veillette/QuadriviumPress/QuantumComputingForTheQuantumCurious/work/epub/figures_ch06.json",
+        "xhtml": "/home/veillette/QuadriviumPress/quantumComputingForTheQuantumCurious/work/epub/extract/OEBPS/html/490703_1_En_6_Chapter.xhtml",
+        "math": "/home/veillette/QuadriviumPress/quantumComputingForTheQuantumCurious/work/epub/math_ch06.json",
+        "figures": "/home/veillette/QuadriviumPress/quantumComputingForTheQuantumCurious/work/epub/figures_ch06.json",
         "pdf_text_dir": "work/text",
         "pdf_pages": "63-71"
       },
@@ -140,9 +140,9 @@
       "title": "Entanglement",
       "slug": "ch-07-entanglement",
       "sources": {
-        "xhtml": "/home/veillette/QuadriviumPress/QuantumComputingForTheQuantumCurious/work/epub/extract/OEBPS/html/490703_1_En_7_Chapter.xhtml",
-        "math": "/home/veillette/QuadriviumPress/QuantumComputingForTheQuantumCurious/work/epub/math_ch07.json",
-        "figures": "/home/veillette/QuadriviumPress/QuantumComputingForTheQuantumCurious/work/epub/figures_ch07.json",
+        "xhtml": "/home/veillette/QuadriviumPress/quantumComputingForTheQuantumCurious/work/epub/extract/OEBPS/html/490703_1_En_7_Chapter.xhtml",
+        "math": "/home/veillette/QuadriviumPress/quantumComputingForTheQuantumCurious/work/epub/math_ch07.json",
+        "figures": "/home/veillette/QuadriviumPress/quantumComputingForTheQuantumCurious/work/epub/figures_ch07.json",
         "pdf_text_dir": "work/text",
         "pdf_pages": "72-84"
       },
@@ -160,9 +160,9 @@
       "title": "Quantum Teleportation",
       "slug": "ch-08-quantum-teleportation",
       "sources": {
-        "xhtml": "/home/veillette/QuadriviumPress/QuantumComputingForTheQuantumCurious/work/epub/extract/OEBPS/html/490703_1_En_8_Chapter.xhtml",
-        "math": "/home/veillette/QuadriviumPress/QuantumComputingForTheQuantumCurious/work/epub/math_ch08.json",
-        "figures": "/home/veillette/QuadriviumPress/QuantumComputingForTheQuantumCurious/work/epub/figures_ch08.json",
+        "xhtml": "/home/veillette/QuadriviumPress/quantumComputingForTheQuantumCurious/work/epub/extract/OEBPS/html/490703_1_En_8_Chapter.xhtml",
+        "math": "/home/veillette/QuadriviumPress/quantumComputingForTheQuantumCurious/work/epub/math_ch08.json",
+        "figures": "/home/veillette/QuadriviumPress/quantumComputingForTheQuantumCurious/work/epub/figures_ch08.json",
         "pdf_text_dir": "work/text",
         "pdf_pages": "85-91"
       },
@@ -180,9 +180,9 @@
       "title": "Quantum Algorithms",
       "slug": "ch-09-quantum-algorithms",
       "sources": {
-        "xhtml": "/home/veillette/QuadriviumPress/QuantumComputingForTheQuantumCurious/work/epub/extract/OEBPS/html/490703_1_En_9_Chapter.xhtml",
-        "math": "/home/veillette/QuadriviumPress/QuantumComputingForTheQuantumCurious/work/epub/math_ch09.json",
-        "figures": "/home/veillette/QuadriviumPress/QuantumComputingForTheQuantumCurious/work/epub/figures_ch09.json",
+        "xhtml": "/home/veillette/QuadriviumPress/quantumComputingForTheQuantumCurious/work/epub/extract/OEBPS/html/490703_1_En_9_Chapter.xhtml",
+        "math": "/home/veillette/QuadriviumPress/quantumComputingForTheQuantumCurious/work/epub/math_ch09.json",
+        "figures": "/home/veillette/QuadriviumPress/quantumComputingForTheQuantumCurious/work/epub/figures_ch09.json",
         "pdf_text_dir": "work/text",
         "pdf_pages": "92-103"
       },
@@ -200,9 +200,9 @@
       "title": "Worksheets",
       "slug": "ch-10-worksheets",
       "sources": {
-        "xhtml": "/home/veillette/QuadriviumPress/QuantumComputingForTheQuantumCurious/work/epub/extract/OEBPS/html/490703_1_En_10_Chapter.xhtml",
-        "math": "/home/veillette/QuadriviumPress/QuantumComputingForTheQuantumCurious/work/epub/math_ch10.json",
-        "figures": "/home/veillette/QuadriviumPress/QuantumComputingForTheQuantumCurious/work/epub/figures_ch10.json",
+        "xhtml": "/home/veillette/QuadriviumPress/quantumComputingForTheQuantumCurious/work/epub/extract/OEBPS/html/490703_1_En_10_Chapter.xhtml",
+        "math": "/home/veillette/QuadriviumPress/quantumComputingForTheQuantumCurious/work/epub/math_ch10.json",
+        "figures": "/home/veillette/QuadriviumPress/quantumComputingForTheQuantumCurious/work/epub/figures_ch10.json",
         "pdf_text_dir": "work/text",
         "pdf_pages": "104-EOF"
       },

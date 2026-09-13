@@ -22,7 +22,7 @@ project:
   doi: 10.1007/978-3-030-61601-4
   license: CC-BY-4.0
   open_access: true
-  github: QuadriviumPress/QuantumComputingForTheQuantumCurious
+  github: QuadriviumPress/quantumComputingForTheQuantumCurious
   toc:
     - file: index.md
     - file: chapters/ch-01-introduction-to-superposition.md
@@ -43,4 +43,4 @@ site:
       url: https://link.springer.com/book/10.1007/978-3-030-61601-4
   nav:
     - title: Sources & Attribution
-      url: https://github.com/QuadriviumPress/QuantumComputingForTheQuantumCurious/blob/main/SOURCES.md
+      url: https://github.com/QuadriviumPress/quantumComputingForTheQuantumCurious/blob/main/SOURCES.md
