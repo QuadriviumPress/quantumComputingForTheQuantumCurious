@@ -5,7 +5,7 @@
   "scripts": {
     "start": "myst start",
     "build": "myst build --html && node scripts/setup-pwa.mjs",
-    "verify": "python3 scripts/verify_book.py . --outline outline.json",
+    "verify": "python3 scripts/verify_book.py",
     "check": "npm run verify && myst build --html --strict --check-links"
   },
   "devDependencies": {
