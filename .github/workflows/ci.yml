@@ -12,5 +12,4 @@ jobs:
   ci:
     uses: QuadriviumPress/bindery/.github/workflows/ci.yml@main
     with:
-      pre-build-command: npm run verify
-      build-command: npm run build
+      build-command: npm run check

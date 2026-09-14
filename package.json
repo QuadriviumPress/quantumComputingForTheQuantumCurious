@@ -6,7 +6,7 @@
     "start": "myst start",
     "build": "myst build --html && node scripts/setup-pwa.mjs",
     "verify": "python3 .opencode/skills/book-to-myst/scripts/verify_book.py . --outline outline.json",
-    "check": "npm run verify && npm run build"
+    "check": "npm run verify && myst build --html --strict --check-links"
   },
   "devDependencies": {
     "mystmd": "1.10.1",
