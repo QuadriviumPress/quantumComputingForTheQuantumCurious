@@ -10,10 +10,14 @@ In classical computers, information is represented as the binary digits 0 or 1. 
 Quantum bits or **qubits** are similar to bits in that there are two measurable states called the 0 and 1 states. However, unlike classical bits, qubits can also be in a superposition state of these 0 and 1 states, as shown in Fig. [](#fig-2-1). Certain computations that would normally need to be performed on 0 or 1 separately on a classical computer could now be completed in a single operation using a qubit on a quantum computer. Intuitively, this could make computations much faster. It is important to understand that although a single qubit is in a superposition of two classical bits, when a qubit is measured, the measurement actually only results in one classical bit of information: either 0 or 1.
 
 ```{figure} ../images/ch-02/490703_1_En_2_Fig1_HTML.png
-:name: fig-2-1
+:label: fig-2-1
+
+:alt: A classical bit can be either 0 or 1. A qubit can be in a superposition of both 0 and 1
+
 
 A classical bit can be either 0 or 1. A qubit can be in a superposition of both 0 and 1
 ```
+
 
 (sec-2-1)=
 ## 2.1 Mathematical Representation of Qubits
@@ -31,10 +35,14 @@ In order to work with qubits, it is useful to know how one can express quantum m
 with *α* and *β* called the amplitudes of the states (Fig. [](#fig-2-2)). Amplitudes are generally complex numbers (a special type of number used in mathematics and physics). However, to understand the meaning of amplitudes, we can imagine the amplitudes as being ordinary (real) numbers. Amplitudes allow us to mathematically represent all of the possible superpositions.
 
 ```{figure} ../images/ch-02/490703_1_En_2_Fig2_HTML.png
-:name: fig-2-2
+:label: fig-2-2
+
+:alt: The state of Schrödinger’s cat expressed in bra-ket notation
+
 
 The state of Schrödinger’s cat expressed in bra-ket notation
 ```
+
 
 **Amplitudes** are very important because they give us the probability of finding the particle in that specific state when performing a measurement. The probability of measuring the particle in state $\lvert 0 \rangle$ is $\lvert \alpha \rvert ^2$, and the probability of measuring the particle in state $\lvert 1 \rangle$ is $\lvert \beta \rvert ^2$. Why is it squared? The short answer is that it gives the correct experimental predictions for this choice of representation.[^1] Squaring *α* and *β* to find the probability is similar to squaring a wave’s amplitude to find the energy of the wave. Since the total probability of observing all the states of the quantum system must add up to 100%, the amplitudes must obey this rule:
 
@@ -154,18 +162,26 @@ Experimentally, a qubit’s state can be changed through some physical action su
 A single qubit can be visualized using the Bloch sphere. The Bloch sphere is a visual representation of a qubit with similar geometric properties to the unit circle from trigonometry. Each point on the Bloch sphere corresponds to a different possible superposition of a single qubit. The top and bottom of the sphere correspond to the two measurable states of the qubit, |0〉 and |1〉. An arrow on the Bloch sphere, which can point to any of the different locations on the surface of the sphere, indicates the current state of the qubit. Figure [](#fig-2-3) shows four examples of how the Bloch sphere can be used to visualize different qubit states. When the arrow is not pointing directly to the top or bottom of the sphere, the qubit is in a superposition state. For example, everywhere around the equator the qubit has a 50/50 chance of collapsing into |0〉 or |1〉 upon measurement. The exact location on the equator corresponds to a distinct state, where the amplitudes can have different signs and be either real or imaginary numbers.
 
 ```{figure} ../images/ch-02/490703_1_En_2_Fig3_HTML.png
-:name: fig-2-3
+:label: fig-2-3
+
+:alt: The state of a qubit is represented by an arrow on the Bloch sphere
+
 
 The state of a qubit is represented by an arrow on the Bloch sphere
 ```
 
+
 When the state of the qubit is changed, the arrow rotates to a different position on the sphere. One analogy is to think of the qubit like Schrödinger’s cat traveling the globe shown in Fig. [](#fig-2-4). When the cat is at the North Pole, it will definitely be alive. When the cat is at the South Pole, it will definitely be dead. As long as the cat’s state is not measured, it can be anywhere else on the globe in a superposition state of alive and dead. As coders of the quantum computer, it is our job to manipulate the state of the qubit which gives the cat instructions on how to move around the globe.
 
 ```{figure} ../images/ch-02/490703_1_En_2_Fig4_HTML.png
-:name: fig-2-4
+:label: fig-2-4
+
+:alt: A cartoon of the Bloch sphere depicted as the Earth, and the state of Schrödinger’s cat represented as a location on Earth
+
 
 A cartoon of the Bloch sphere depicted as the Earth, and the state of Schrödinger’s cat represented as a location on Earth
 ```
+
 
 **Question 1** Schrödinger’s cat is determined to be alive. What location on the Earth in Fig. [](#fig-2-4) could the cat have been before the quantum measurement?
 
@@ -268,10 +284,14 @@ In a classical computer, the 0- and 1-bit mathematically represent the two allow
 12. If the qubit represented by Fig. [](#fig-2-5) is measured, what are the possible outcomes? Numerical values for the amplitudes are not needed, only conceptual statements.
 
     ```{figure} ../images/ch-02/490703_1_En_2_Fig5_HTML.png
-    :name: fig-2-5
+    :label: fig-2-5
+
+    :alt: A qubit’s state is shown on the Bloch sphere
+
 
     A qubit’s state is shown on the Bloch sphere
     ```
+
 
 [^1]: We know that quantum physics is probabilistic from experiments. The squared coefficients are needed to make a quantity that behaves like a probability distribution, i.e., it is a real number and positive. There cannot be a negative probability by definition.
 

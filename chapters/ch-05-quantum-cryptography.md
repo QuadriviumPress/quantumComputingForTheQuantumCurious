@@ -54,10 +54,14 @@ The sender (Alice) and receiver (Bob) publicly agree to the relationship between
 Alice sends five electrons to Bob. When Alice sends an electron prepared in one basis and Bob measures in the same basis, they measure the same spin. However, if Bob measures in a different basis than Alice, then the electron will be in a superposition state and there will be a 50% probability of the state collapsing into 0 or 1. Example values for the first three bits of a BB84 experiment are shown in Fig. [](#fig-5-1). Can you fill in the last two bits?
 
 ```{figure} ../images/ch-05/490703_1_En_5_Fig1_HTML.png
-:name: fig-5-1
+:label: fig-5-1
+
+:alt: Alice's and Bob's measurements of the BB84 protocol
+
 
 Alice's and Bob's measurements of the BB84 protocol
 ```
+
 
 ### 5.3.4 Classical Post-processing
 
@@ -65,10 +69,14 @@ Alice's and Bob's measurements of the BB84 protocol
 2. If they measured in the same basis, they keep that bit. If they measured in a different basis, they discard that bit. This is shown in Fig. [](#fig-5-2). For the measurements performed in the same basis, Alice and Bob are guaranteed to have the same string of bits *unless there was an eavesdropper.*
 
    ```{figure} ../images/ch-05/490703_1_En_5_Fig2_HTML.png
-   :name: fig-5-2
+   :label: fig-5-2
+
+   :alt: Alice and Bob's measurements of the BB84 protocol completed from Fig. [](#fig-5-1). The discarded bits are grayed out, and the key is 01
+
 
    Alice and Bob's measurements of the BB84 protocol completed from Fig. [](#fig-5-1). The discarded bits are grayed out, and the key is 01
    ```
+
 3. They publicly compare a subset of the bits, say 20 out of 100 bits. If all 20 are the same, then it is unlikely that there was an eavesdropper. The remaining 80 become the shared key.
 
 (sec-5-4)=
@@ -81,10 +89,14 @@ If an eavesdropper (Eve) overhears the post-processing part where Alice and Bob 
 The eavesdropping situation is shown in Fig. [](#fig-5-3). If Eve chooses the same basis as Alice, the spin is unchanged when it gets to Bob (bit #1). If Eve chooses a different basis than Alice, the spin could be different when it gets to Bob (bits #2 and #3). Eve could get lucky and Bob's bit could agree with Alice (bit #2). However, Bob is equally likely to measure something different from Alice (bit #3). Can you fill in what might happen with bits #4 and #5?
 
 ```{figure} ../images/ch-05/490703_1_En_5_Fig3_HTML.png
-:name: fig-5-3
+:label: fig-5-3
+
+:alt: An example of how to catch an eavesdropper using the BB84 protocol
+
 
 An example of how to catch an eavesdropper using the BB84 protocol
 ```
+
 
 When Alice and Bob compare a portion of their key bits, a discrepancy would indicate the presence of an eavesdropper. If they compare a sufficient number of key bits and all of them match, they can be reasonably sure that the rest of it is secure. This statement will be quantified shortly in the questions.
 

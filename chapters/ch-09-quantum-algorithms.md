@@ -15,18 +15,26 @@ However, we have not yet learned about a fundamental aspect of quantum computing
 The main advantage that quantum computers have over classical computers is **parallelism**. Because qubits can be in a superposition of states, a quantum computer can perform an operation on all of the states simultaneously. Let’s say we want to know the result of applying some function *f*(*x*) to some number *x*. Two classical computations are needed to find the result for *x* = 0 and for *x* = 1, whereas a quantum computer can evaluate both answers in parallel as displayed in Fig. [](#fig-9-1).
 
 ```{figure} ../images/ch-09/490703_1_En_9_Fig1_HTML.png
-:name: fig-9-1
+:label: fig-9-1
+
+:alt: It takes a classical computer two operations to operate on two pieces of information. A quantum computer with one qubit can operate on two classical pieces of information at once
+
 
 It takes a classical computer two operations to operate on two pieces of information. A quantum computer with one qubit can operate on two classical pieces of information at once.
 ```
 
+
 If we wanted to compute *f*(*x*) for *x* = 2 (represented as 10 in binary) and *x* = 3 (represented as 11), we would need to add a second qubit. The two-qubit quantum computer can then evaluate all four possibilities at once as shown in Fig. [](#fig-9-2).
 
 ```{figure} ../images/ch-09/490703_1_En_9_Fig2_HTML.png
-:name: fig-9-2
+:label: fig-9-2
+
+:alt: It takes a classical computer four operations to operate on four pieces of information. A quantum computer with two-qubits can operate on four classical pieces of information at once
+
 
 It takes a classical computer four operations to operate on four pieces of information. A quantum computer with two-qubits can operate on four classical pieces of information at once.
 ```
+
 
 **Question 1** How many pieces of information can a three-qubit quantum computer process in parallel? Write down all of the states.
 
@@ -89,26 +97,38 @@ No, it could either be the balanced function *f*₃ or the constant function *f*
 Before we go through the Deutsch-Jozsa Algorithm in detail, it will be useful to understand a cartoon solution of the problem, which we will demonstrate using the [Mach-Zehnder interferometer](https://www.st-andrews.ac.uk/physics/quvis/simulations_html5/sims/SinglePhotonLab/SinglePhotonLab.html) from Chap. [](#ch-3). Once again, superposition and interference will be the key properties to utilize. The cartoon experimental setup is shown in Fig. [](#fig-9-3). In the QuVis simulation, we will model the functions by placing pieces of glass in the blue boxes. The goal is to illustrate how it may be possible to classify *f*(*x*) as either constant or balanced by making a single measurement. Here is how the algorithm can be implemented:
 
 ```{figure} ../images/ch-09/490703_1_En_9_Fig3_HTML.png
-:name: fig-9-3
+:label: fig-9-3
+
+:alt: The Mach-Zehnder interferometer altered to implement the cartoon version of the Deutsch-Jozsa algorithm. The function implementations are shown in Fig. [](#fig-9-5)
+
 
 The Mach-Zehnder interferometer altered to implement the cartoon version of the Deutsch-Jozsa algorithm. The function implementations are shown in Fig. [](#fig-9-5).
 ```
 
+
 1. The two inputs *x* = 0 and *x* = 1 are represented by the two possible photon paths as shown in Fig. [](#fig-9-4). A photon taking the yellow path is *x* = 0, while a photon taking the red path is *x* = 1. Beam splitter 1 therefore creates a superposition of 0 and 1 since the photon takes both paths. Due to the orientation of the beam splitter, the red transmitted path will have no phase shift whereas the yellow reflected path will have a phase shift of *π*.
 
    ```{figure} ../images/ch-09/490703_1_En_9_Fig4_HTML.png
-   :name: fig-9-4
+   :label: fig-9-4
+
+   :alt: Inputs to the function are photons along two different paths. A photon taking the yellow path is *x* = 0, while a photon taking the red path is *x* = 1
+
 
    Inputs to the function are photons along two different paths. A photon taking the yellow path is *x* = 0, while a photon taking the red path is *x* = 1.
    ```
 
+
 2. Each of the four functions in Table [](#tbl-9-1) can be modelled by a different experimental setup as shown in Fig. [](#fig-9-5). For example, if we wanted to test *f*₁, we would place a piece of glass along the red path but nothing along the yellow path. A photon passing through the glass will experience an additional phase shift of *π*. The reason that this is only a cartoon demonstration is that the phase shifters do not actually implement the function, as we will see in the next section.
 
    ```{figure} ../images/ch-09/490703_1_En_9_Fig5_HTML.png
-   :name: fig-9-5
+   :label: fig-9-5
+
+   :alt: The four different functions from Table [](#tbl-9-1) experimentally implemented by four different configurations. In this cartoon, we have denoted the function changing the bit by an *X*-gate,...
+
 
    The four different functions from Table [](#tbl-9-1) experimentally implemented by four different configurations. In this cartoon, we have denoted the function changing the bit by an *X*-gate, however in reality as described in Eq. ([](#eq-9-2)) two qubits are needed to implement these functions.
    ```
+
 
    **Question 4** If *f*₁ is being tested, what is the phase of the yellow path upon reaching the second beamsplitter? The red path photon?
 
@@ -147,10 +167,14 @@ Also, we will need a second qubit for this algorithm, and will shortly see why. 
 As an example, assume *f*(0) = 1, then $|0\rangle |1\rangle \xrightarrow {f} |0\rangle |1\oplus f(0)\rangle =|0\rangle |0\rangle$. Although the implementation of functions as in Eq. ([](#eq-9-2)) looks strange, this is needed to ensure that the function operation is unitary.[^3] The circuit that implements the Deutsch-Jozsa algorithm is shown in Fig. [](#fig-9-6). We will now give a walk-through of the algorithm and the circuit.
 
 ```{figure} ../images/ch-09/490703_1_En_9_Fig6_HTML.png
-:name: fig-9-6
+:label: fig-9-6
+
+:alt: The quantum circuit for the one qubit Deutsch-Jozsa algorithm. The generic function *f*(*x*) is represented by the box with *f* inside, and the labels below/above the lines indicate how the...
+
 
 The quantum circuit for the one qubit Deutsch-Jozsa algorithm. The generic function *f*(*x*) is represented by the box with *f* inside, and the labels below/above the lines indicate how the function is implemented.
 ```
+
 
 **Deutsch-Jozsa Procedure**:
 
@@ -255,10 +279,14 @@ Explore more quantum algorithms from the [IBM quantum textbook](https://qiskit.o
 5. Figure [](#fig-9-7) shows the gate implementation for testing a three-qubit function *f*(*x*). A constant function will always result in |000〉 or |111〉.
 
    ```{figure} ../images/ch-09/490703_1_En_9_Fig7_HTML.png
-   :name: fig-9-7
+   :label: fig-9-7
+
+   :alt: The gate implementation for testing the different possible three-qubit functions
+
 
    The gate implementation for testing the different possible three-qubit functions.
    ```
+
 
    - (a) How many evaluations would be needed on a classical computer to tell whether this function is constant or balanced?
    - (b) By running this algorithm on IBM Q, can you determine whether this function is constant or balanced?

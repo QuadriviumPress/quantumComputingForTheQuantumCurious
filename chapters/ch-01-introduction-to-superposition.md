@@ -13,18 +13,26 @@ In this section, we review the concepts of classical and quantum superposition. 
 In classical physics, the concept of **superposition** is used to describe when two physical quantities are added together to make another third physical quantity that is entirely different from the original two. An example of the “superposition principle” in classical physics is clear when working with waves. Two pulses on a string which pass through each other will interfere following the principle of superposition as shown [](#fig-1-1). Noise-canceling headphones use superposition by creating sound waves with the same magnitude as the incoming sound wave but completely out of phase, thereby canceling the sound wave. This destructive interference is illustrated in the second figure of [](#fig-1-1).
 
 ```{figure} ../images/ch-01/490703_1_En_1_Fig1_HTML.png
-:name: fig-1-1
+:label: fig-1-1
+
+:alt: Examples of constructive and destructive interference due to the classical superposition principle
+
 
 Examples of constructive and destructive interference due to the classical superposition principle
 ```
 
+
 Another common application of classical superposition is finding the total magnitude and direction of quantities such as force, electric field, magnetic field, etc. For example, to calculate the total electric force $\vec{F}_{\text{total}}$ on a charge $q_2$ produced by other charges $q_1$ and $q_3$, one would sum the forces produced by each individual charge: $\vec{F}_{\text{total}} = \vec{F}_{12} + \vec{F}_{32}$. The challenge here is that forces are vectors, so vector addition is needed, as shown in [](#fig-1-2).
 
 ```{figure} ../images/ch-01/490703_1_En_1_Fig2_HTML.png
-:name: fig-1-2
+:label: fig-1-2
+
+:alt: Classical superposition used to calculate the total electric force on one charge from two other charges
+
 
 A classical superposition is used to calculate the total electric force on a charge $q_2$ due to charges $q_1$ and $q_3$
 ```
+
 
 (sec-1-2)=
 ## 1.2 Quantum Superposition
@@ -32,18 +40,26 @@ A classical superposition is used to calculate the total electric force on a cha
 Quantum superposition is a phenomenon associated with quantum systems. Quantum systems include small objects such as nuclei, electrons, elementary particles, and photons, for which the wave-particle duality and other non-classical effects are observed. For example, you would normally expect that an object can have an arbitrary amount of kinetic energy ranging from 0 to infinity (∞) Joules, i.e. a baseball could be at rest or thrown at any speed. However, according to quantum mechanics, the ball’s energy is **quantized**, meaning it can only have certain values. A specific example of energy quantization is when energies can only have integer values *E* = 0, 1, 2, 3, …, but not any numbers inbetween. This is counterintuitive, as we cannot observe it with our classical eyes. The gaps in energy are too small to be seen with the human eye and as such can be treated as continuous for classical physics. However, the gaps are more pronounced at smaller sizes, as shown in [](#fig-1-3). For example the hydrogen atom is small enough that quantum effects are important, and Bohr needed to quantize the energy levels to successfully model its behavior.
 
 ```{figure} ../images/ch-01/490703_1_En_1_Fig3_HTML.png
-:name: fig-1-3
+:label: fig-1-3
+
+:alt: Quantum effects associated with energy quantization are important at the atomic and subatomic distances. In this figure, the grey lines represent allowed energies. In quantum systems, the energies...
+
 
 Quantum effects associated with energy quantization are important at the atomic and subatomic distances. In this figure, the grey lines represent allowed energies. In quantum systems, the energies are quantized. As we zoom out of the quantum system to see it through a classical lens (represented by the downward arrow), the energies become more dense and appear continuous. This is the reason quantization is not noticeable in everyday objects
 ```
 
+
 One aspect of quantum superposition can be explained using a coin analogy. A coin has a 50∕50 probability of landing as either heads or tails, as shown in [](#fig-1-4).
 
 ```{figure} ../images/ch-01/490703_1_En_1_Fig4_HTML.png
-:name: fig-1-4
+:label: fig-1-4
+
+:alt: A tossed coin has a 50% chance of landing on heads or tails
+
 
 A tossed coin has a 50% chance of landing on heads or tails
 ```
+
 
 **Question 1** What state is the coin in while it is in the air? Is it heads or tails?
 
@@ -78,10 +94,14 @@ Quantum Tic-Tac-Toe in Worksheet [](#sec-10-3)
 2. An ink is created by mixing together 50% red ink and 50% yellow ink. An artist uses it to stamp a picture of a sun. If the ink behaves like a quantum system in a half-yellow, half-red quantum superposition, what are the different options for what the resulting picture could look like? Some options are shown in [](#fig-1-5).
 
    ```{figure} ../images/ch-01/490703_1_En_1_Fig5_HTML.png
-   :name: fig-1-5
+   :label: fig-1-5
+
+   :alt: Image of the painted suns
+
 
    Image of the painted suns
    ```
+
 
 3. If this controversial picture of a dress[^4] is always seen as blue/black by Student A and always seen as white/gold by Student B, is the dress in a quantum superposition?
 

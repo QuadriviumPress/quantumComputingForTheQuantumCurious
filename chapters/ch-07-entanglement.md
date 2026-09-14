@@ -13,18 +13,26 @@ So far, we have discussed the manipulation and measurement of a single qubit. Ho
 To provide one example of the strange behavior of entanglement, suppose we have two fair coins. Classically, if you flipped two fair coins many times, you would measure the outcomes HH, HT, TH, or TT, each occurring with a 25% probability. However, by quantum entangling these two fair coins, it is possible to create a state $(1/\sqrt {2})(\lvert HH\rangle + \lvert TT\rangle )$ as illustrated in Fig. [](#fig-7-1). Many other types of entangled states are possible, but this is one famous example called a Bell state. If you flipped this “entangled” pair of coins, they are entangled in such a way that only two measurement outcomes are possible: (1) both coins land on heads; or (2) both coins land on tails; each outcome occurring with 50% probability. You would never see HT or TH!
 
 ```{figure} ../images/ch-07/490703_1_En_7_Fig1_HTML.png
-:name: fig-7-1
+:label: fig-7-1
+
+:alt: Two coins that are entangled in such a way that they either both land on HH or both land on TT
+
 
 Two coins that are entangled in such a way that they either both land on HH or both land on TT.
 ```
 
+
 Furthermore, if the two entangled coins are separated by thousands of miles, one coin can be flipped and measured. In this case, if the measured coin produced the outcome heads, then we automatically know that the other coin must also land on heads. If the measured coin produced the outcome tails, then we automatically know that the other coin must also land of tails! If this isn’t strange enough, this appears to suggest that the two coins can transmit information instantaneously, and possibly even faster than the speed of light (the fastest speed in the Universe), as shown in Fig. [](#fig-7-2). If the two coins are flipped at the exact same time, somehow the two coins know to land on the same side as the other even though there can be no classical communication between them.
 
 ```{figure} ../images/ch-07/490703_1_En_7_Fig2_HTML.png
-:name: fig-7-2
+:label: fig-7-2
+
+:alt: Separated entangled coins produce correlated outcomes despite no communication between them
+
 
 Two coins are separated with no means of communication between each other. Classically, the flip of the second coin would be unrelated to the first flip. However, entangled coins would still produce correlated results.
 ```
+
 
 How does the other coin instantaneously “know” what was measured on the other? Is information somehow being transmitted faster than the speed of light? Einstein called this behavior a “spooky action at a distance.”[^1] It has since been shown that no information is being transmitted from one place to the other, and so no information is being transmitted faster than the speed of light. Rather, the particles share non-classical information at the time of entanglement, which is then observed in the measurement process. The correlation between entangled qubits is the key that allows quantum computers to perform certain computations much faster than classical computers.
 
@@ -34,10 +42,14 @@ How does the other coin instantaneously “know” what was measured on the othe
 It is tempting to think that there may be some classical explanation for entanglement. Did the entanglement change the fair coins by adding extra mass to the heads side or the tails side, thereby making them unfair? To provide a more realistic example in a classical system, consider a particle that decays into two lighter particles. The momenta of these three particles are related by the conservation of momentum: $\vec {p}_i = \vec {p}_{f1} + \vec {p}_{f2}$. Given a known total initial momentum, then by measuring the momentum of one of the final state particles, we can determine the momentum of the other final state particle. In summary, by measuring one particle’s momentum, we know the other. Momentum is the hidden classical variable that is encoded when the two particles are created. This is shown in Fig. [](#fig-7-3). Naturally, the question arises: is there a conceptually similar hidden variable in the quantum mechanical situation?
 
 ```{figure} ../images/ch-07/490703_1_En_7_Fig3_HTML.png
-:name: fig-7-3
+:label: fig-7-3
+
+:alt: When a particle decays into two smaller particles, the decay products are “classically entangled” according to the conservation of momentum
+
 
 When a particle decays into two smaller particles, the decay products are “classically entangled” according to the conservation of momentum.
 ```
+
 
 However, Bell’s theorem[^2] demonstrated that the correlation between entangled quantum particles is more than what is possible classically, disproving the idea of a hidden variable. All other potential loopholes have been resolved as of 2016.[^3] As such, entanglement is a purely quantum phenomenon with no classical explanation.
 
@@ -54,10 +66,14 @@ Given multiple qubits, the total state of the system can be written together in 
 As we saw for the single qubit states, the coefficients $\alpha_{ij}$ are called the amplitudes and are generally complex numbers. Measuring the two qubits will collapse the system into one of the four basis states with probability given by $\alpha _{ij}^2$. This is shown in Fig. [](#fig-7-4).
 
 ```{figure} ../images/ch-07/490703_1_En_7_Fig4_HTML.png
-:name: fig-7-4
+:label: fig-7-4
+
+:alt: A two-qubit system collapses into one of four basis states with probability given by the squared amplitudes
+
 
 A two-qubit system can collapse into one of four states with probability $\alpha _{ij}^2$.
 ```
+
 
 ### 7.3.1 Example
 
@@ -136,10 +152,14 @@ However, this is not possible. For example, take $\alpha_0\beta_1 = 0$. This mea
 As there are many different ways of building a quantum computer, there are many different ways of physically entangling particles. One method called “spontaneous parametric down-conversion” shines a laser at a special nonlinear crystal. The crystal splits the incoming photon into two photons with correlated polarizations. For example, one could produce a pair of photons that always have perpendicular polarizations (see Fig. [](#fig-7-5)). Just as the engineering aspect of building a quantum computer is outside the scope of this course, so is the technological aspect of how qubits are physically entangled. We will focus more on how entanglement is represented in a quantum computer and the uses of this.
 
 ```{figure} ../images/ch-07/490703_1_En_7_Fig5_HTML.png
-:name: fig-7-5
+:label: fig-7-5
+
+:alt: A nonlinear crystal creates two photons with entangled polarizations
+
 
 A nonlinear crystal creates two photons with entangled polarizations.
 ```
+
 
 (sec-7-7)=
 ## 7.7 CNOT Gate
@@ -171,10 +191,14 @@ The truth table for the CNOT gate is shown in Table [](#tbl-7-1).[^6] From this 
 Figure [](#fig-7-6) is the circuit for the CNOT gate. Plugging in the “Before” values from Table [](#tbl-7-1) into this circuit will produce the “After” values.
 
 ```{figure} ../images/ch-07/490703_1_En_7_Fig6_HTML.png
-:name: fig-7-6
+:label: fig-7-6
+
+:alt: The CNOT gate applies an X gate to the target qubit when the control qubit is 1
+
 
 The CNOT gate performs an *X* gate on the target qubit if the control qubit is |1〉.
 ```
+
 
 (sec-7-8)=
 ## 7.8 Notation Convention
@@ -182,10 +206,14 @@ The CNOT gate performs an *X* gate on the target qubit if the control qubit is |
 When converting between bra-ket notation and circuit notation, there are two different conventions. Since we will be using the IBM quantum computer, we will adopt the IBM convention. This is shown in Fig. [](#fig-7-7). In the IBM notation, the topmost qubit in the circuit corresponds to the rightmost qubit in the bra-ket notation (|…*q*〉). IBM shorthand is top-down in circuit notation, which corresponds to right-left in bra-ket notation.
 
 ```{figure} ../images/ch-07/490703_1_En_7_Fig7_HTML.png
-:name: fig-7-7
+:label: fig-7-7
+
+:alt: The two conventions for mapping circuit notation to the bra-ket notation, IBM (left) and Other (right). Note in this book we adopt the IBM convention as we run code on the IBM quantum computers
+
 
 The two conventions for mapping circuit notation to the bra-ket notation, IBM (left) and Other (right). Note in this book we adopt the IBM convention as we run code on the IBM quantum computers.
 ```
+
 
 The other convention, which we will **not** use going forward but provide in case it is seen in other resources, is shown in Fig. [](#fig-7-7). Here, the topmost qubit corresponds to the leftmost qubit in bra-ket notation (|*q*…〉). Top-down in circuit notation corresponds to left-right in bra-ket notation. We will not use this going forward.
 
@@ -195,28 +223,40 @@ The other convention, which we will **not** use going forward but provide in cas
 1. Figure [](#fig-7-8) shows the quantum circuit sending |01〉 through a CNOT gate. What is the output?
 
    ```{figure} ../images/ch-07/490703_1_En_7_Fig8_HTML.png
-   :name: fig-7-8
+   :label: fig-7-8
+
+   :alt: The quantum circuit that sends a multi-qubit in the |01 state through a CNOT gate
+
 
    The quantum circuit that sends a multi-qubit in the |01〉 state through a CNOT gate.
    ```
+
 
    The figure shows that, in IBM notation, the control qubit is on top and the target is on the bottom. Since the control is in the |1〉 state, the target qubit is flipped to |1〉. So measurement will always result in |11〉.
 
 2. Examine Fig. [](#fig-7-9). The control qubit is in a superposition of |0〉 and |1〉. What is the effect of a CNOT gate?
 
    ```{figure} ../images/ch-07/490703_1_En_7_Fig9_HTML.png
-   :name: fig-7-9
+   :label: fig-7-9
+
+   :alt: The quantum circuit that sends a control qubit in a superposition state through a CNOT gate
+
 
    The quantum circuit that sends a control qubit in a superposition state through a CNOT gate.
    ```
 
+
    Before the CNOT operation, in ket notation, the control qubit is in the $\frac {1}{\sqrt {2}}\lvert 0\rangle +\frac {1}{\sqrt {2}}\lvert 1\rangle$ state, while the target qubit is in the |0〉 state. The two-qubit input state is therefore $\frac {1}{\sqrt {2}}\lvert 00\rangle +\frac {1}{\sqrt {2}}\lvert 01\rangle$. Applying the rules for the CNOT, the first state |00〉 does not change as the control qubit is |0〉. However, for the second state |01〉, the control qubit is |1〉 and so the target qubit is flipped from |0〉 to |1〉. The result of the CNOT gate is the state $\frac {1}{\sqrt {2}}\lvert 00\rangle +\frac {1}{\sqrt {2}}\lvert 11\rangle$. The histogram from measuring this state is shown in Fig. [](#fig-7-10). This is a special state called the Bell state.
 
    ```{figure} ../images/ch-07/490703_1_En_7_Fig10_HTML.png
-   :name: fig-7-10
+   :label: fig-7-10
+
+   :alt: The measurement histogram produced by running the circuit in Fig. [](#fig-7-9). Reprint courtesy of International Business Machines Corporation, ⒸInternational Business Machines Corporation
+
 
    The measurement histogram produced by running the circuit in Fig. [](#fig-7-9). Reprint courtesy of International Business Machines Corporation, ⒸInternational Business Machines Corporation.
    ```
+
 
    The two qubits are entangled after the CNOT! As illustrated in the previous example, this state cannot be written as the product of two separate qubits. As with the single-qubit gates, the CNOT gate operates on ALL states in the superposition, e.g., the CNOT gate acts on the four basis states of a two qubit system simultaneously. Quantum algorithms leverage this parallelism to ensure speed improvements over classical computers. In addition, as with all quantum gates, the CNOT is reversible, meaning the operation can be undone (which can be used to figure out the original qubit states).
 
@@ -271,24 +311,28 @@ For those interested in hands-on experiments, see QuTools[^8]
 6. The output of a CNOT gate is shown in Fig. [](#fig-7-11). What were the inputs?
 
    ```{figure} ../images/ch-07/490703_1_En_7_Fig11_HTML.png
-   :name: fig-7-11
+   :label: fig-7-11
+
+   :alt: CNOT gate for Problem 6
+
 
    CNOT gate for Problem 6
    ```
 
+
 7. Can you predict the state produced by these quantum circuits? Try them out on the IBM quantum computer.
-   - (a) ![](../images/ch-07/490703_1_En_7_Figa_HTML.gif)
-   - (b) ![](../images/ch-07/490703_1_En_7_Figb_HTML.gif)
-   - (c) ![](../images/ch-07/490703_1_En_7_Figc_HTML.gif)
-   - (d) ![](../images/ch-07/490703_1_En_7_Figd_HTML.gif)
+   - (a) ![Quantum circuit for Problem 7a](../images/ch-07/490703_1_En_7_Figa_HTML.gif)
+   - (b) ![Quantum circuit for Problem 7b](../images/ch-07/490703_1_En_7_Figb_HTML.gif)
+   - (c) ![Quantum circuit for Problem 7c](../images/ch-07/490703_1_En_7_Figc_HTML.gif)
+   - (d) ![Quantum circuit for Problem 7d](../images/ch-07/490703_1_En_7_Figd_HTML.gif)
 8. Can you predict which states will be produced by these quantum circuits?
-   - (a) ![](../images/ch-07/490703_1_En_7_Fige_HTML.gif)
-   - (b) ![](../images/ch-07/490703_1_En_7_Figf_HTML.gif)
-   - (c) ![](../images/ch-07/490703_1_En_7_Figg_HTML.gif)
-   - (d) ![](../images/ch-07/490703_1_En_7_Figh_HTML.gif)
+   - (a) ![Quantum circuit for Problem 8a](../images/ch-07/490703_1_En_7_Fige_HTML.gif)
+   - (b) ![Quantum circuit for Problem 8b](../images/ch-07/490703_1_En_7_Figf_HTML.gif)
+   - (c) ![Quantum circuit for Problem 8c](../images/ch-07/490703_1_En_7_Figg_HTML.gif)
+   - (d) ![Quantum circuit for Problem 8d](../images/ch-07/490703_1_En_7_Figh_HTML.gif)
 9. Can you predict the state produced by these quantum circuits? Note: to put the circuit in a) on the IBM quantum computer, you need to use the code (rather than the click-and-drag interface) to put the second CNOT control on the bottom qubit.
-   - (a) ![](../images/ch-07/490703_1_En_7_Figi_HTML.gif)
-   - (b) ![](../images/ch-07/490703_1_En_7_Figj_HTML.gif)
+   - (a) ![Quantum circuit for Problem 9a](../images/ch-07/490703_1_En_7_Figi_HTML.gif)
+   - (b) ![Quantum circuit for Problem 9b](../images/ch-07/490703_1_En_7_Figj_HTML.gif)
 10. Use the IBM Q[^9] simulator to create the entangled state $\frac {1}{\sqrt {2}}|{01}\rangle +\frac {1}{\sqrt {2}}|{10}\rangle$.
 11. Suppose Alice has one half of an entangled pair and Bob has the other half. When Alice makes a measurement on her qubit, Bob’s qubit instantaneously changes its state. Can Alice and Bob use entanglement to transmit information faster than the speed of light? Why or why not?
 

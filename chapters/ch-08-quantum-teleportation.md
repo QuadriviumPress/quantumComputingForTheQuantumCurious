@@ -46,26 +46,38 @@ The way to get around the problem of not being able to measure the qubit (and av
    Alice takes her qubit and walks away, and Bob takes his and walks in a different direction as shown in Fig. [](#fig-8-1).
 
    ```{figure} ../images/ch-08/490703_1_En_8_Fig1_HTML.png
-   :name: fig-8-1
+   :label: fig-8-1
+
+   :alt: Alice and Bob’s qubits are entangled
+
 
    Alice and Bob’s qubits are entangled
    ```
 
+
 2. Now Alice obtains a third qubit in an unknown state (qubit #1) that she wants to transfer to Bob. She can only communicate with him classically by email or phone, and it would take too long to physically bring the qubit to Bob. The current situation is shown in Fig. [](#fig-8-2).
 
    ```{figure} ../images/ch-08/490703_1_En_8_Fig2_HTML.png
-   :name: fig-8-2
+   :label: fig-8-2
+
+   :alt: Alice has a qubit (*#*1) in an unknown state she wants to transfer to Bob
+
 
    Alice has a qubit (*#*1) in an unknown state she wants to transfer to Bob
    ```
 
+
 3. Alice interacts her two qubits using a CNOT gate (qubits #1 and #2) and measures the qubit she originally had (qubit #2). She then sends the unknown qubit to be teleported (qubit #1) through a Hadamard gate and afterwards measures the output. Recall that the Hadamard gate is used to create a superposition of states. The current situation is shown in Fig. [](#fig-8-3).
 
    ```{figure} ../images/ch-08/490703_1_En_8_Fig3_HTML.png
-   :name: fig-8-3
+   :label: fig-8-3
+
+   :alt: Alice passes her two qubits through a CNOT gate
+
 
    Alice passes her two qubits through a CNOT gate
    ```
+
 
    Because Alice’s original qubit (qubit #2) was entangled with Bob’s, the CNOT interaction with qubit #1 immediately changes the state of Bob’s qubit.
 
@@ -114,10 +126,14 @@ The way to get around the problem of not being able to measure the qubit (and av
    Remember that qubit #1 and qubit #2 are the ones that belong to Alice. We see that the state of Bob’s qubit #3 has changed by applying the CNOT and Hadamard gates to Alice’s qubits. As can be seen in Eq. ([](#eq-8-6)), Bob’s qubit is currently in one of four possible superposition states. This is shown in Fig. [](#fig-8-4).
 
    ```{figure} ../images/ch-08/490703_1_En_8_Fig4_HTML.png
-   :name: fig-8-4
+   :label: fig-8-4
+
+   :alt: Four possible superposition states of Bob’s qubit
+
 
    Four possible superposition states of Bob’s qubit
    ```
+
 
    The four possible superposition states of Bob’s qubit depend on Alice’s original qubit #2 through the initial entanglement in Step 1, as well as depending on the unknown qubit #1 to be teleported from the CNOT gate in Step 3. The reason we need to measure the state of Alice’s qubit #2 and qubit #1 is to figure out the way Bob’s qubit depends on these two. The current status is shown in Fig. [](#fig-8-4). Note that Bob has not done anything with his qubit at this stage.
 
@@ -126,18 +142,26 @@ The way to get around the problem of not being able to measure the qubit (and av
 Depending on the measurement obtained by Alice, Bob can recover the original state of the teleported qubit (i.e., *a*|0〉 + *b*|1〉) by using a combination of *X* or *Z* gates. The specific combination of *X*∕*Z* gates to use will be explored as a question in Sect. [](#sec-8-4). This situation is illustrated in Fig. [](#fig-8-5). At this stage, the qubit has been successfully teleported from Alice to Bob, and thus ends the teleportation protocol.
 
 ```{figure} ../images/ch-08/490703_1_En_8_Fig5_HTML.png
-:name: fig-8-5
+:label: fig-8-5
+
+:alt: The final result of teleportation between Bob and Alice
+
 
 The final result of teleportation between Bob and Alice
 ```
 
+
 Throughout the teleportation process, the original qubit #1 that has to be teleported does not remain in its original quantum state: *a*|0〉 + *b*|1〉. This is because Alice performs a measurement on it during the teleportation protocol. As a result, there is no copy of qubit #1 existing at any time, and so teleportation does not contradict the no-cloning theorem. It is important to understand that neither Alice nor Bob know what qubit #1’s coefficients *a* or *b* are at any point in the process. All they know is that qubit #1 has been teleported from Alice to Bob. The full quantum teleportation circuit is illustrated in Fig. [](#fig-8-6).
 
 ```{figure} ../images/ch-08/490703_1_En_8_Fig6_HTML.png
-:name: fig-8-6
+:label: fig-8-6
+
+:alt: The full quantum circuit for quantum teleportation. The dashed box entangles Alice’s and Bob’s qubits to make the Bell state. Afterwards, the quantum teleportation protocol described in the text...
+
 
 The full quantum circuit for quantum teleportation. The dashed box entangles Alice’s and Bob’s qubits to make the Bell state. Afterwards, the quantum teleportation protocol described in the text is performed.
 ```
+
 
 Why is this protocol interesting? To answer this, imagine Alice and Bob met a long time ago and each took one qubit of the entangled pair. Bob is now traveling around the world and can only communicate with Alice by phone or email. If Alice wanted to transfer quantum data to Bob without quantum teleportation, she would have to meet Bob and physically give Bob her qubit. Quantum teleportation allows Alice to send *quantum* information using a *classical* communications channel. All she has to do is make some measurements and email Bob the values. Bob can then apply the correct recipe to his qubit to bring it to the state of the original qubit #1. As well as sending information between two people, quantum teleportation is a useful way of causing interaction between different parts of a quantum computer (by teleporting a qubit to a different part of the quantum computer you want to interact with).[^3]
 

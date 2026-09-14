@@ -13,36 +13,52 @@ Now that we have explored qubits and the phenomenon of superposition, we can ask
 In classical optics, a **beam splitter** acts like a partially reflective mirror that splits a beam of light into two. In a 50/50 beam splitter, 50% of the light intensity is transmitted and 50% is reflected, as shown in Fig. [](#fig-3-1).
 
 ```{figure} ../images/ch-03/490703_1_En_3_Fig1_HTML.png
-:name: fig-3-1
+:label: fig-3-1
+
+:alt: A beam splitter reflects 50% of the incident light and transmits 50% of the incident light
+
 
 A beam splitter reflects 50% of the incident light and transmits 50% of the incident light.
 ```
+
 
 One way to visualize the beam splitter is to imagine a barrier with holes randomly cut out like Swiss cheese, as shown in Fig. [](#fig-3-2). Imagine this barrier is placed in a pond, and a water wave moves toward the barrier. After the wave hits the barrier, we would observe a smaller wave going through the barrier and another would be reflected off the barrier.
 
 ```{figure} ../images/ch-03/490703_1_En_3_Fig2_HTML.png
-:name: fig-3-2
+:label: fig-3-2
+
+:alt: A beam splitter reflects 50% of the incident light and transmits 50% of the incident light
+
 
 A beam splitter reflects 50% of the incident light and transmits 50% of the incident light.
 ```
+
 
 **Question 1** What would happen if a classical particle such as a soccer ball is randomly kicked at the barrier? Assume the ball can fit through the holes.
 
 Experiments demonstrate that light behaves both like a wave (Young’s double-slit experiment) and a particle (photoelectric effect, Compton effect). Classically, light is thought of as a wave consisting of continually oscillating electric and magnetic fields. However, light can also be thought of as a stream of particles called **photons**. Photons have no mass but carry the light’s energy from one point to another at the speed of light. A laser beam is comprised of photons. If you turn down the intensity of your laser, you can even send one photon at a time, as shown in Fig. [](#fig-3-3). As setting up a single photon source and detector requires specialized equipment, we will instead run a simulator to explore the quantum effects of photons.
 
 ```{figure} ../images/ch-03/490703_1_En_3_Fig3_HTML.png
-:name: fig-3-3
+:label: fig-3-3
+
+:alt: Low-intensity light is a stream of single photons
+
 
 Low-intensity light is a stream of single photons.
 ```
 
+
 **Question 2** Open the beam splitter simulator,[^1] go to the Controls screen, and fire a single photon. The setup before the photon hits a beam splitter is shown in Fig. [](#fig-3-4). Which detectors are triggered when the photon passes through the 50/50 beam splitter?
 
 ```{figure} ../images/ch-03/490703_1_En_3_Fig4_HTML.png
-:name: fig-3-4
+:label: fig-3-4
+
+:alt: A single photon is sent at a beam splitter and the outcome is measured with detectors to see whether the beam splitter transmits or reflects
+
 
 A single photon is sent at a beam splitter and the outcome is measured with detectors to see whether the beam splitter transmits or reflects.
 ```
+
 
 - (a) Always detector 1
 - (b) Always detector 2
@@ -77,10 +93,14 @@ If the photon was split in half, both detectors in the beam splitter experiment 
 At this point you may be thinking that the photon was either transmitted or reflected at the beam splitter, and we simply didn’t have that information until it hit Detector 1 or 2. Unfortunately, this would be the incorrect interpretation formed by our classical animal brain. This would be like saying the coin was Heads all along, and all we had to do was look at it to determine its state. Similarly to how a spinning coin will land on heads 50% of the time and tails 50% of the time, the single photon is in a superposition of both states all the way until the point when it reaches the detectors. This distinction might seem like a matter of semantics, but this is important as the distinction describes two different ways that the universe operates at the smallest possible distances. Also, it will be important once the system becomes more complicated. The experimental setup after the photon hits a beam splitter is shown in Fig. [](#fig-3-5).
 
 ```{figure} ../images/ch-03/490703_1_En_3_Fig5_HTML.png
-:name: fig-3-5
+:label: fig-3-5
+
+:alt: The beam splitter puts the photon into a superposition state
+
 
 The beam splitter puts the photon into a superposition state.
 ```
+
 
 If we let the transmitted path be |0〉 (detector 1), and the reflected path be |1〉 (detector 2), then the photon’s state after the beam splitter is
 
@@ -100,10 +120,14 @@ The phenomenon of superposition allows quantum computers to perform operations o
 To convince ourselves that the photon really did take two paths at once, let’s see what happens when a second beam splitter is added. This experimental setup is shown in Fig. [](#fig-3-6). The mirrors redirect the photons towards the second beam splitter. This device configuration is known as a **Mach–Zehnder interferometer**. The set up is very sensitive to the distances between the mirrors and detectors, which have to be the same or differ by an integer number of the photon’s wavelength.
 
 ```{figure} ../images/ch-03/490703_1_En_3_Fig6_HTML.png
-:name: fig-3-6
+:label: fig-3-6
+
+:alt: Schematic of the Mach–Zehnder interferometer from...
+
 
 Schematic of the Mach–Zehnder interferometer from [https://www.st-andrews.ac.uk/physics/quvis/simulations_html5/sims/Mach-Zehnder-Interferometer/Mach_Zehnder_Interferometer.html](https://www.st-andrews.ac.uk/physics/quvis/simulations_html5/sims/Mach-Zehnder-Interferometer/Mach_Zehnder_Interferometer.html)
 ```
+
 
 **Question 6** If we assume that the photon was reflected by the first beam splitter, which detectors would be triggered?
 
@@ -136,10 +160,14 @@ To understand the operation of the interferometer, it is important to note that 
 What does it mean for a photon to be phase shifted? In this case, it is more intuitive to think about the wave nature of light. The phase shift would invert the electric and magnetic field oscillations relative to the incoming wave. If a *π*-shifted wave overlaps with the original wave, destructive interference occurs as is shown in Fig. [](#fig-3-7).
 
 ```{figure} ../images/ch-03/490703_1_En_3_Fig7_HTML.png
-:name: fig-3-7
+:label: fig-3-7
+
+:alt: The light through a beam splitter is phase shifted if it is reflected from the dielectric side but not phase shifted if it is reflected from the glass side
+
 
 The light through a beam splitter is phase shifted if it is reflected from the dielectric side but not phase shifted if it is reflected from the glass side.
 ```
+
 
 **Question 9** If we assume that light is a classical wave exhibiting interference, can you work out which detectors would be triggered? Note that the first beam splitter has the dielectric side on top, while the second has the dielectric on the bottom, as shown in Fig. [](#fig-3-6).
 
@@ -154,20 +182,28 @@ The light through a beam splitter is phase shifted if it is reflected from the d
 The behavior of the interferometer can also be viewed from the particle perspective, though it may be less intuitive. Recall from the single beam splitter experiment that the photon did not split up or clone itself. It was in a superposition state, essentially taking both paths. The second beam splitter treats the photon as if it came in from both top and bottom simultaneously. As shown in Fig. [](#fig-3-8), the top path enters the second beam splitter from the glass side and experiences no phase shift, whereas the bottom path enters from the dielectric side and is phase shifted upon reflection. The +0 and +*π* states at Detector 2 interfere destructively, while the +0 and +0 states at Detector 1 interfere constructively. Therefore, Detector 1 triggers with 100% probability.
 
 ```{figure} ../images/ch-03/490703_1_En_3_Fig8_HTML.png
-:name: fig-3-8
+:label: fig-3-8
+
+:alt: The blue path shows the photon’s path if it is reflected by Beam Splitter 1. The red path shows the path if the photon is transmitted. Because Beam Splitter 2 has the dielectric facing downwards,...
+
 
 The blue path shows the photon’s path if it is reflected by Beam Splitter 1. The red path shows the path if the photon is transmitted. Because Beam Splitter 2 has the dielectric facing downwards, blue is phase shifted upon reflection.
 ```
+
 
 **Question 10** If the photon is sent into the Mach–Zehnder interferometer from the upper left instead of the bottom left, which detector(s) would be triggered and with what probability?
 
 Even though the output of the first beam splitter is 50/50, the second beam splitter can distinguish whether the laser was fired from the top or the bottom. The first beam splitter creates a superposition state, but adding a second one undoes the superposition and recovers the original state. This is a non-classical operation. It would be like starting with the coin heads up, flipping it, flipping it again while it is still in the air, and then always getting heads when it lands! This is highlighted in Fig. [](#fig-3-9).
 
 ```{figure} ../images/ch-03/490703_1_En_3_Fig9_HTML.png
-:name: fig-3-9
+:label: fig-3-9
+
+:alt: Coin analogy for the interferometer. Sending a photon through one beam splitter puts it in superposition, but adding a second beam splitter undoes the superposition and recovers the original state
+
 
 Coin analogy for the interferometer. Sending a photon through one beam splitter puts it in superposition, but adding a second beam splitter undoes the superposition and recovers the original state.
 ```
+
 
 There is hidden information in the superposition state. In the Mach–Zehnder photon qubit, the information is encoded in the form of the phase shift. In the experiment shown in Fig. [](#fig-3-8), we chose the phase shift to have a value of *π*. However, we could have just as easily chosen the phase shift to have any value between 0 and 2*π* (the angles of a circle). Each separate choice of phase shift would produce a different type of superposition state that would still produce the same measurable 50/50 outcome. This is represented on the Bloch sphere by different locations along the equator.[^4] This phase shift information is present in the amplitudes but not the square of the amplitudes (and hence hidden from us in the Mach–Zehnder experiment–though we could make another experiment to try to determine this information). Here are two simple examples of distinct states that can be created in two different experimental arrangements of the Mach–Zehnder experiment which still have the same 50/50 probability:
 
@@ -201,16 +237,24 @@ Furthermore, in the Mach–Zehnder experiment we created a superposition, perfor
 3. In practice, it is difficult to place the detectors the exact same distance from the beam splitter. The difference in distance is measured using the time delay Δ*t* between photons. The experiment is shown in Fig. [](#fig-3-10) and the data in Fig. [](#fig-3-11).
 
    ```{figure} ../images/ch-03/490703_1_En_3_Fig10_HTML.png
-   :name: fig-3-10
+   :label: fig-3-10
+
+   :alt: The experiment varies the position of Detector 2 and records the number of coincidences, i.e., the number of times both detectors are triggered simultaneously
+
 
    The experiment varies the position of Detector 2 and records the number of coincidences, i.e., the number of times both detectors are triggered simultaneously.
    ```
 
+
    ```{figure} ../images/ch-03/490703_1_En_3_Fig11_HTML.png
-   :name: fig-3-11
+   :label: fig-3-11
+
+   :alt: Data is shown above for light bursts sent from the laser every 0.4 μs. Figure reproduced with permission of Martin Laforest and the Communications and Strategic Initiatives Team at the Institute...
+
 
    Data is shown above for light bursts sent from the laser every 0.4 μs. Figure reproduced with permission of Martin Laforest and the Communications and Strategic Initiatives Team at the Institute for Quantum Computing, University of Waterloo Outreach department.
    ```
+
 
    - (a) Does the data shown in Fig. [](#fig-3-11) at Δ*t* = 0 support that light is a particle or a wave?
    - (b) Why are there large coincidence counts when Δ*t* ≠ 0? (Hint: Look at the spacing between the peaks.)
@@ -218,20 +262,28 @@ Furthermore, in the Mach–Zehnder experiment we created a superposition, perfor
 4. Using the matrices given in Fig. [](#fig-3-12), show how the superposition state is created by multiplying the beam splitter matrix by initial photon state.
 
    ```{figure} ../images/ch-03/490703_1_En_3_Fig12_HTML.png
-   :name: fig-3-12
+   :label: fig-3-12
+
+   :alt: Matrix formulation of the Mach–Zehnder apparatus
+
 
    Matrix formulation of the Mach–Zehnder apparatus.
    ```
+
 
 5. Construct the matrix representation for a 30/70 beam splitter.
 
 6. Unsettled by the Mach–Zehnder interferometer, you decide to determine once and for all which path the photon takes after the first beam splitter. You place another detector (indicated by the eyeball) on the upper path as shown in Fig. [](#fig-3-13). If the eyeball sees a photon, what would be seen at Detectors 1 and 2?
 
    ```{figure} ../images/ch-03/490703_1_En_3_Fig13_HTML.png
-   :name: fig-3-13
+   :label: fig-3-13
+
+   :alt: A third detector (your eye) is added to the Mach–Zehnder apparatus
+
 
    A third detector (your eye) is added to the Mach–Zehnder apparatus.
    ```
+
 
 [^1]: [https://www.st-andrews.ac.uk/physics/quvis/simulations_html5/sims/photons-particles-waves/photons-particles-waves.html](https://www.st-andrews.ac.uk/physics/quvis/simulations_html5/sims/photons-particles-waves/photons-particles-waves.html).
 

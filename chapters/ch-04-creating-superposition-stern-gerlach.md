@@ -15,28 +15,40 @@ Classically, an electron’s spin can be visualized as a rotation about its own 
 The **Stern–Gerlach apparatus** (SGA) showed that the electron spin is quantized to only two values. This video[^2] explains the experimental apparatus used to measure the electron’s spin. The key point here is that the vertically oriented apparatus (called the *z*-direction by convention) only measures the spin as either up or down, not randomly oriented at any angle. Since the spin of an electron has two measurable states, it can represent a qubit with $\lvert 0 \rangle$ as spin up and $\lvert 1 \rangle$ as spin down (Fig. [](#fig-4-1)).
 
 ```{figure} ../images/ch-04/490703_1_En_4_Fig1_HTML.png
-:name: fig-4-1
+:label: fig-4-1
+
+:alt: An electron can spin either up or down and produce a magnetic field
+
 
 An electron can spin either up or down and produce a magnetic field.
 ```
+
 
 **Question 1** Open up the PhET Stern–Gerlach simulator[^3] and try sending electrons of various initial spins into the Stern–Gerlach apparatus (SGA).
 
 Are the results what you would expect? The “up” and “down” directions are defined by the orientation of the apparatus, as in Fig. [](#fig-4-2). There is nothing inherently special about the *z*-direction compared to the *x*- or *y*-direction. An SGA rotated horizontally would measure either spin left or spin right. An SGA rotated by 45° would measure the spin to be either diagonally up or diagonally down. What is particularly interesting is if we send a single spin up electron into a horizontally oriented SGA.
 
 ```{figure} ../images/ch-04/490703_1_En_4_Fig2_HTML.png
-:name: fig-4-2
+:label: fig-4-2
+
+:alt: A cartoon picture of the Stern–Gerlach Apparatus. Electron spin produces a magnetic field either in the up or down direction
+
 
 A cartoon picture of the Stern–Gerlach Apparatus. Electron spin produces a magnetic field either in the up or down direction.
 ```
 
+
 **Question 2** Where would you expect a spin up electron to land in Fig. [](#fig-4-3) after passing through a horizontal SGA?
 
 ```{figure} ../images/ch-04/490703_1_En_4_Fig3_HTML.png
-:name: fig-4-3
+:label: fig-4-3
+
+:alt: Choices for Question 2
+
 
 Choices for Question 2.
 ```
+
 
 Classically, vertically oriented bar magnets in a horizontal magnetic field would land at the center of the screen. However, recall that the spin can only be measured as left or right and cannot possibly land in the center. The way quantum mechanics solves this problem is to have the electron land either on the left or the right with 50% probability. Sound familiar? Sending a spin up electron through a horizontal SGA puts the electron in a superposition state of left and right.
 
@@ -76,10 +88,14 @@ In more traditional qubit notation, spin in the + *z* and − *z* axis is writte
 This is non-classical because you cannot add or subtract horizontal magnetic field vectors to get a vertical magnetic field vector. One analogy might be to think about a person looking at a coin vertically to determine its state. If they see heads or tails, someone looking from the side would see a superposition. If they are forced to make a choice via measurement, they would say heads or tails with 50% probability (Fig. [](#fig-4-4)).
 
 ```{figure} ../images/ch-04/490703_1_En_4_Fig4_HTML.png
-:name: fig-4-4
+:label: fig-4-4
+
+:alt: Analogy for how a definite vertical spin is seen as a superposition in the horizontal direction
+
 
 Analogy for how a definite vertical spin is seen as a superposition in the horizontal direction.
 ```
+
 
 **Example** Write the $\lvert + \rangle$ state in terms of $\lvert 0 \rangle$ and $\lvert 1 \rangle$.
 
@@ -117,10 +133,14 @@ In Fig. [](#fig-4-5), a box on a ramp is subject to a force. The vector decompos
 2. The basis must be orthogonal.
 
 ```{figure} ../images/ch-04/490703_1_En_4_Fig5_HTML.png
-:name: fig-4-5
+:label: fig-4-5
+
+:alt: Rewriting quantum states in terms of a different basis is similar to decomposing a classical vector into a different choice of coordinate system
+
 
 Rewriting quantum states in terms of a different basis is similar to decomposing a classical vector into a different choice of coordinate system.
 ```
+
 
 Let us check these conditions for the *z*-basis, which consists of states $\lvert 0 \rangle$ and $\lvert 1 \rangle$:
 
@@ -145,10 +165,14 @@ In this geometric representation of the *z*-basis and *x*-basis, the orthogonal 
 **Question 3** Use Fig. [](#fig-4-6) and trigonometry to show that $\lvert 1 \rangle = 1/\sqrt {2}\lvert + \rangle - 1/\sqrt {2}\rangle \lvert -\rangle$.
 
 ```{figure} ../images/ch-04/490703_1_En_4_Fig6_HTML.png
-:name: fig-4-6
+:label: fig-4-6
+
+:alt: Geometric representation of the *z*-basis and *x*-basis. The state of a spin up electron is shown
+
 
 Geometric representation of the *z*-basis and *x*-basis. The state of a spin up electron is shown.
 ```
+
 
 Often, there is hidden information about the state that cannot be measured unless we change to a different basis. In the *x*-basis, there is no measurable difference between $\lvert 0 \rangle$ and $\lvert 1 \rangle$. Both the $\lvert 0 \rangle$ qubit and the $\lvert 1 \rangle$ qubit would have measurement results of 50% left and 50% right in the *x*-basis. In the *z*-basis, $\lvert 0 \rangle$ would have 100% probability of being measured up in the Stern–Gerlach and 0% being measured down, while $\lvert 1 \rangle$ would have 0% probability being measured up and 100% down.
 
@@ -164,10 +188,14 @@ You learned that measuring a qubit collapses its superposition state into one of
 - (c) Superposition of + *z* and − *z*
 
 ```{figure} ../images/ch-04/490703_1_En_4_Fig7_HTML.png
-:name: fig-4-7
+:label: fig-4-7
+
+:alt: The *z*-axis SGA lets through spin up electrons but blocks spin down electrons
+
 
 The *z*-axis SGA lets through spin up electrons but blocks spin down electrons.
 ```
+
 
 **Question 5** Add a second SGA, oriented horizontally as in Fig. [](#fig-4-8). What is the spin of the electrons before entering the second SGA?
 
@@ -176,10 +204,14 @@ The *z*-axis SGA lets through spin up electrons but blocks spin down electrons.
 - (c) Superposition of + *x* and − *x*
 
 ```{figure} ../images/ch-04/490703_1_En_4_Fig8_HTML.png
-:name: fig-4-8
+:label: fig-4-8
+
+:alt: The *z* and *x*-axis SGA
+
 
 The *z* and *x*-axis SGA.
 ```
+
 
 **Question 6** What is the spin of the electrons after passing through the second SGA?
 
@@ -196,10 +228,14 @@ The *z* and *x*-axis SGA.
 Given that only spin up electrons passed through the first SGA, one would expect that the electron is still spin up after the second SGA, no matter what is measured in *x*. However, if you measure the *z*-spin with a third SGA as in Fig. [](#fig-4-9), it has a 50% chance of being up or down!
 
 ```{figure} ../images/ch-04/490703_1_En_4_Fig9_HTML.png
-:name: fig-4-9
+:label: fig-4-9
+
+:alt: The first SGA selects for + *z* spin and the second SGA selects for − *x*. The third SGA shows that by measuring the − *x* in the *z*-basis then the electron is in a superposition of + *z* and − *z*
+
 
 The first SGA selects for + *z* spin and the second SGA selects for − *x*. The third SGA shows that by measuring the − *x* in the *z*-basis then the electron is in a superposition of + *z* and − *z*.
 ```
+
 
 By measuring the electron, we fundamentally changed its state. Measuring the *x*-spin of the qubit puts it into a superposition of up and down, even when it started as up to begin with. When you measure the length of an object with a ruler, you don’t expect the object’s length to change after you measure the it!
 
@@ -225,20 +261,28 @@ Quantum measurement collapse is used in many quantum applications such as crypto
 1. The Stern–Gerlach apparatus is rotated by 90° so that the magnetic field is in the *x*-direction as shown in Fig. [](#fig-4-10). If electrons from a random source are sent through the apparatus, what pattern would be formed on the screen?
 
    ```{figure} ../images/ch-04/490703_1_En_4_Fig10_HTML.png
-   :name: fig-4-10
+   :label: fig-4-10
+
+   :alt: Stern Gerlach apparatus
+
 
    Stern Gerlach apparatus.
    ```
+
 
 2. Would $\lvert 0 \rangle$ and $\lvert + \rangle$ together satisfy the criteria for a valid basis?
 
 3. An electron is in a superposition state shown in the geometric representation in Fig. [](#fig-4-11).
 
    ```{figure} ../images/ch-04/490703_1_En_4_Fig11_HTML.png
-   :name: fig-4-11
+   :label: fig-4-11
+
+   :alt: Superposition state of the electron
+
 
    Superposition state of the electron.
    ```
+
 
    - (a) What is the state of the electron in the *z*-basis? i.e. find *α* and *β* in $\lvert \text{electron} \rangle = \alpha \lvert 0 \rangle + \beta \lvert 1 \rangle$
    - (b) What is the probability of measuring spin up?
@@ -261,60 +305,88 @@ Quantum measurement collapse is used in many quantum applications such as crypto
 5. An electron with random spin is sent through two vertical SGAs as shown in Fig. [](#fig-4-12). What would be the output of the second SGA?
 
    ```{figure} ../images/ch-04/490703_1_En_4_Fig12_HTML.png
-   :name: fig-4-12
+   :label: fig-4-12
+
+   :alt: SGA setup for Problem 5
+
 
    SGA setup for Problem 5.
    ```
+
 
 6. An electron with random spin is sent through two vertical SGAs, where the second SGA is rotated upside down, or 180°.
 
    - (a) If the second + *z* port is blocked as in Fig. [](#fig-4-13), what would be the output of the second SGA?
 
       ```{figure} ../images/ch-04/490703_1_En_4_Fig13_HTML.png
-      :name: fig-4-13
+      :label: fig-4-13
+
+      :alt: SGA setup for Problem 6a
+
 
       SGA setup for Problem 6a.
       ```
 
+
    - (b) If both ports on the second SGA are open as in Fig. [](#fig-4-14), what would you see at the output?
 
       ```{figure} ../images/ch-04/490703_1_En_4_Fig14_HTML.png
-      :name: fig-4-14
+      :label: fig-4-14
+
+      :alt: SGA setup for Problem 6b
+
 
       SGA setup for Problem 6b.
       ```
 
+
 7. An electron with random spin is sent through a horizontal SGA followed by a vertical SGA as in Fig. [](#fig-4-15). What would be the output of the second SGA?
 
    ```{figure} ../images/ch-04/490703_1_En_4_Fig15_HTML.png
-   :name: fig-4-15
+   :label: fig-4-15
+
+   :alt: SGA setup for Problem 7
+
 
    SGA setup for Problem 7.
    ```
 
+
 8. An electron with random spin is sent through three SGAs as shown in Fig. [](#fig-4-16). What would be the output of the third SGA?
 
    ```{figure} ../images/ch-04/490703_1_En_4_Fig16_HTML.png
-   :name: fig-4-16
+   :label: fig-4-16
+
+   :alt: SGA setup for Problem 8
+
 
    SGA setup for Problem 8.
    ```
 
+
 9. An electron with random spin is sent through three SGAs as shown in Fig. [](#fig-4-17). What would be the output of the third SGA?
 
    ```{figure} ../images/ch-04/490703_1_En_4_Fig17_HTML.png
-   :name: fig-4-17
+   :label: fig-4-17
+
+   :alt: SGA setup for Problem 9
+
 
    SGA setup for Problem 9.
    ```
 
+
 10. An electron with random spin is sent through four SGAs as shown in Fig. [](#fig-4-18). What would be the output of the fourth SGA?
 
     ```{figure} ../images/ch-04/490703_1_En_4_Fig18_HTML.png
-    :name: fig-4-18
+    :label: fig-4-18
+
+    :alt: SGA setup for Problem 10
+
 
     SGA setup for Problem 10.
     ```
+
 
 [^1]: See [https://en.wikipedia.org/wiki/Spin_(physics)](https://en.wikipedia.org/wiki/Spin_(physics)) for more details.
 

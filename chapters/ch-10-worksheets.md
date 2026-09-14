@@ -16,10 +16,14 @@ doi: 10.1007/978-3-030-61601-4_10
 **Questions** Alice and Bob each measure one of two qubits with a Stern-Gerlach apparatus. Start with both SGAs along the z-axis (Fig. [](#fig-10-1)).
 
 ```{figure} ../images/ch-10/490703_1_En_10_Fig1_HTML.png
-:name: fig-10-1
+:label: fig-10-1
+
+:alt: Figure reproduced from the [QuVis website](https://www.st-andrews.ac.uk/physics/quvis/), licensed under creative commons CC-BY-NC-SA
+
 
 Figure reproduced from the [QuVis website](https://www.st-andrews.ac.uk/physics/quvis/), licensed under creative commons CC-BY-NC-SA.
 ```
+
 
 1. Try sending pairs of particles in a product state |*↑*~A~⟩|*↓*~B~⟩. What do Alice and Bob measure individually?
 2. Try sending pairs of particles in an entangled state: $\frac {1}{\sqrt {2}}\left (|{\uparrow _A}\rangle |{\downarrow _B}\rangle -|{\downarrow _A}\rangle |{\uparrow _B}\rangle \right )$. What do Alice and Bob measure individually?
@@ -30,10 +34,14 @@ Figure reproduced from the [QuVis website](https://www.st-andrews.ac.uk/physics/
 Now rotate both SGAs along the x-axis (Fig. [](#fig-10-2)).
 
 ```{figure} ../images/ch-10/490703_1_En_10_Fig2_HTML.png
-:name: fig-10-2
+:label: fig-10-2
+
+:alt: Figure reproduced from the [QuVis website](https://www.st-andrews.ac.uk/physics/quvis/), licensed under creative commons CC-BY-NC-SA
+
 
 Figure reproduced from the [QuVis website](https://www.st-andrews.ac.uk/physics/quvis/), licensed under creative commons CC-BY-NC-SA.
 ```
+
 
 4. Try sending pairs of particles in a product state |*↑*~A~⟩|*↓*~B~⟩. What do Alice and Bob measure individually?
 5. Try sending pairs of particles in an entangled state $\frac {1}{\sqrt {2}}\left (|{\uparrow _A}\rangle |{\downarrow _B}\rangle -|{\downarrow _A}\rangle |{\uparrow _B}\rangle \right )$. What do Alice and Bob measure individually?
@@ -52,10 +60,14 @@ For students who have learned about polarization, the creation of superposition 
 **Question** Relate the behavior of the polarizers to what you saw in the SGAs. Hint: think of the top two polarizers in Fig. [](#fig-10-3) as the *z*-basis, and diagonal polarizers as the *x*-basis.
 
 ```{figure} ../images/ch-10/490703_1_En_10_Fig3_HTML.png
-:name: fig-10-3
+:label: fig-10-3
+
+:alt: Unpolarized light is sent through a series of polarizing filters
+
 
 Unpolarized light is sent through a series of polarizing filters.
 ```
+
 
 (sec-10-3)=
 ## 10.3 Quantum Tic-Tac-Toe
@@ -69,51 +81,75 @@ Quantum Tic-Tac-Toe resembles the classical Tic-Tac-Toe game in its setup and ob
 1. The X player goes first. We note that keeping indices helps to track the game. The markers can be placed in any of the two spaces on the game board (Fig. [](#fig-10-4)).
 
    ```{figure} ../images/ch-10/490703_1_En_10_Fig4_HTML.png
-   :name: fig-10-4
+   :label: fig-10-4
+
+   :alt: The Quantum Tic-Tac-Toe layout with numbered squares (left): one player’s move with spooky markers *x*~1~ (right)
+
 
    The Quantum Tic-Tac-Toe layout with numbered squares (left): one player’s move with spooky markers *x*~1~ (right).
    ```
 
+
 2. The O player goes next. The markers can be placed in any two squares, even ones that are already occupied by other X or O markers. Notice in Fig. [](#fig-10-5) that the index for the O player also starts with 1, representing its first move placing markers in squares 1 and 6.
 
    ```{figure} ../images/ch-10/490703_1_En_10_Fig5_HTML.png
-   :name: fig-10-5
+   :label: fig-10-5
+
+   :alt: Example of the second player’s move
+
 
    Example of the second player’s move.
    ```
 
+
 3. Player X goes again and can place their spooky markers at any two squares, even ones occupied by other Xs or Os. The game goes on until the players create a “cyclic loop” as seen in Fig. [](#fig-10-6).
 
    ```{figure} ../images/ch-10/490703_1_En_10_Fig6_HTML.png
-   :name: fig-10-6
+   :label: fig-10-6
+
+   :alt: The cyclic loop is created by the player X. Using lines between the spooky markers helps in identifying the loop
+
 
    The cyclic loop is created by the player X. Using lines between the spooky markers helps in identifying the loop.
    ```
 
+
 4. **Collapsing the quantum state**. When a loop is created, the players have to collapse their state. There are three options for who makes the decision on how the markers will be collapsed. The fair choice would be by the player who did not create the cycle (in this case, player O). When the markers are forced to collapse, only one of the two squares for each move can be chosen, so player O can choose either square 4 or 6. Depending on their choice, the outcome would be different (Fig. [](#fig-10-7)). Once the states are collapsed, the “spooky markers” change into classical markers and they fully occupy the state of one particular square.
 
    ```{figure} ../images/ch-10/490703_1_En_10_Fig7_HTML.png
-   :name: fig-10-7
+   :label: fig-10-7
+
+   :alt: The two collapse outcomes due to player O’s decision
+
 
    The two collapse outcomes due to player O’s decision.
    ```
+
 
 5. The next player can place his or her spooky markers in any two squares except the ones that are occupied by the collapsed markers. The game goes on until another cycle is created and the players are forced to collapse the state.
 6. **Winning the game**. In some cases both players will create three in a row after collapsing their spooky markers. In this case, the player with the smallest sum of indexes wins. For example, in Fig. [](#fig-10-8) player X wins because they have the smaller sum.
 
    ```{figure} ../images/ch-10/490703_1_En_10_Fig8_HTML.png
-   :name: fig-10-8
+   :label: fig-10-8
+
+   :alt: Player X wins, because the sum of their indexes is 1 + 2 + 3 = 6. Player O got three in a row, but the sum of their indexes is 2 + 1 + 4 = 7
+
 
    Player X wins, because the sum of their indexes is 1 + 2 + 3 = 6. Player O got three in a row, but the sum of their indexes is 2 + 1 + 4 = 7.
    ```
 
+
 **Some Other Rules Can Be Added or Modified** One of the requirements could be that players cannot place both markers in the same square like the one shown in Fig. [](#fig-10-9). Another way to make the collapse more quantum (or more random) is using a coin flip to decide which player chooses the collapse.
 
 ```{figure} ../images/ch-10/490703_1_En_10_Fig9_HTML.png
-:name: fig-10-9
+:label: fig-10-9
+
+:alt: A player cannot put both markers in the same square
+
 
 A player cannot put both markers in the same square.
 ```
+
 
 Other modifications may include assigning different point values for three in a row, such as the winner with lowest sum of the indexes gets 1 point, while the other player gets 1∕2 point.
 
@@ -139,18 +175,26 @@ How are the game rules and principles connected to the real applications of quan
 **Setup** Open the [IBM Q simulator](https://quantum-computing.ibm.com)[^5] and start a new circuit in the Circuit Composer (Fig. [](#fig-10-10)).
 
 ```{figure} ../images/ch-10/490703_1_En_10_Fig10_HTML.png
-:name: fig-10-10
+:label: fig-10-10
+
+:alt: A new experiment on the IBM Q Circuit Composer. Reprint courtesy of International Business Machines Corporation, ⒸInternational Business Machines Corporation
+
 
 A new experiment on the IBM Q Circuit Composer. Reprint courtesy of International Business Machines Corporation, ⒸInternational Business Machines Corporation.
 ```
 
+
 The default is 5-qubits initialized to the |0⟩ state. Gates can be applied by dragging and dropping them onto the appropriate qubit(s). Don’t forget to add the measurement gate at the end to see the results. When you are satisfied with your circuit, save the experiment and click Run (Fig. [](#fig-10-11)).
 
 ```{figure} ../images/ch-10/490703_1_En_10_Fig11_HTML.png
-:name: fig-10-11
+:label: fig-10-11
+
+:alt: Options for running the IBM Q experiment. Reprint courtesy of International Business Machines Corporation, ⒸInternational Business Machines Corporation
+
 
 Options for running the IBM Q experiment. Reprint courtesy of International Business Machines Corporation, ⒸInternational Business Machines Corporation.
 ```
+
 
 By default, the circuit will be evaluated 1024 times using the simulator backend. You may also run the circuit on a real quantum computer, subject to a waiting period. Increasing the number of shots will increase the statistical accuracy of the results at the expense of run-time. After you have run the circuit, the results will appear in a link at the bottom of the page.
 
@@ -164,10 +208,14 @@ By default, the circuit will be evaluated 1024 times using the simulator backend
 6. How can you modify the circuit so that the worm in a superposition state becomes definitely dead?
 
 ```{figure} ../images/ch-10/490703_1_En_10_Fig12_HTML.png
-:name: fig-10-12
+:label: fig-10-12
+
+:alt: Dead or alive worms
+
 
 Dead or alive worms.
 ```
+
 
 **Part II: Entanglement** The worm is next to a hungry bird, such that the worm is either alive or chomped to pieces (Fig. [](#fig-10-13)).
 
@@ -177,10 +225,14 @@ Dead or alive worms.
 10. How can you modify the circuit so that the worm in a superposition state becomes either definitely dead or definitely alive?
 
 ```{figure} ../images/ch-10/490703_1_En_10_Fig13_HTML.png
-:name: fig-10-13
+:label: fig-10-13
+
+:alt: Very dead or alive worms
+
 
 Very dead or alive worms.
 ```
+
 
 **Further Resources**
 
@@ -205,10 +257,14 @@ Very dead or alive worms.
 2. Use the simulator (Fig. [](#fig-10-14)) to compare the measurement outcomes of the mixed particles vs. the superposition particles. What are the similarities and differences?
 
    ```{figure} ../images/ch-10/490703_1_En_10_Fig14_HTML.png
-   :name: fig-10-14
+   :label: fig-10-14
+
+   :alt: Figure reproduced from the [QuVis website](https://www.st-andrews.ac.uk/physics/quvis/), licensed under creative commons CC-BY-NC-SA
+
 
    Figure reproduced from the [QuVis website](https://www.st-andrews.ac.uk/physics/quvis/), licensed under creative commons CC-BY-NC-SA.
    ```
+
 
 3. By making a basis change with $|0\rangle =\frac {1}{\sqrt {2}}|{+}\rangle +\frac {1}{\sqrt {2}}|{-}\rangle$ and $|1\rangle =\frac {1}{\sqrt {2}}|{+}\rangle -\frac {1}{\sqrt {2}}|{-}\rangle$, can you explain the similarities and differences mathematically?
 4. Which of the two inputs labelled “Superposition or mixture?” and “Superposition or mixture??” is a random mixture and which is a superposition?
@@ -225,10 +281,14 @@ Very dead or alive worms.
 - Perform calculations to write the spin in a different measurement basis (Fig. [](#fig-10-15)).
 
   ```{figure} ../images/ch-10/490703_1_En_10_Fig15_HTML.png
-  :name: fig-10-15
+  :label: fig-10-15
+
+  :alt: Figure reproduced from the [PHET Stern-Gerlach Simulator website](https://phet.colorado.edu/sims/stern-gerlach/stern-gerlachen.html), licensed under creative commons CC-BY
+
 
   Figure reproduced from the [PHET Stern-Gerlach Simulator website](https://phet.colorado.edu/sims/stern-gerlach/stern-gerlach_en.html), licensed under creative commons CC-BY.
   ```
+
 
 | Angle of SGA (*θ*~SGA~) | Probability of going through | Probability of being blocked |
 | --- | --- | --- |
@@ -253,7 +313,7 @@ Very dead or alive worms.
 3. What function describes the shape of the graph?
 4. Write the state of the spin up electron as a superposition for an arbitrary SGA angle (*θ*~SGA~). In other words, find *α* and *β* in |electron⟩ = *α*|goes through⟩ + *β*|blocked⟩. The diagram below may help, but note that *θ* ≠ *θ*~SGA~.
 
-   ![](../images/ch-10/490703_1_En_10_Figa_HTML.png)
+   ![Diagram relating Stern-Gerlach angle to electron superposition amplitudes](../images/ch-10/490703_1_En_10_Figa_HTML.png)
 
 5. Do the theoretical probabilities match the simulated data?
 6. What would your scatter plot look like if you sent electrons through with the random *xz* spin option?
@@ -269,7 +329,7 @@ Before parting ways, you and Bob agree on a key. Using a coin with heads = 0 and
 
 - Shared Key:
 
-  ![](../images/ch-10/490703_1_En_10_Figxb_HTML.png)
+  ![Shared one-time pad key generated by coin flips](../images/ch-10/490703_1_En_10_Figxb_HTML.png)
 
 - **Encoding**:
   1. Choose a secret letter to send to Bob in binary using Table [](#tbl-10-1). Message:
@@ -306,13 +366,13 @@ Before parting ways, you and Bob agree on a key. Using a coin with heads = 0 and
      | *Y* | 01011001 |
      | *Z* | 01011010 |
 
-     ![](../images/ch-10/490703_1_En_10_Figxc_HTML.png)
+     ![Secret message encoded in binary for the one-time pad worksheet](../images/ch-10/490703_1_En_10_Figxc_HTML.png)
 
   2. Add the key to your message, bit by bit, to encode the message. In binary, 0 + 0 = 0, 0 + 1 = 1 + 0 = 1, and 1 + 1 = 0. For example, if the key = 0110 and the message = 1101, then the cipher text = 1011, as 0110 + 1101 = 1011.
 
      - Cipher Text:
 
-     ![](../images/ch-10/490703_1_En_10_Equa_HTML.png)
+     ![Binary addition of key and message to produce cipher text](../images/ch-10/490703_1_En_10_Equa_HTML.png)
 
   3. Send the cipher text to Bob.
 - **Decoding**
@@ -416,9 +476,9 @@ Before parting ways, you and Alice agree on a key. Using a coin with heads = 0 a
   2. The electron that’s sent through your Stern-Gerlach apparatus will either be in a 0 or 1 state. You can randomize this by flipping a coin.
   3. Pass the correct spin card to Bob face down.
 
-     ![](../images/ch-10/490703_1_En_10_Figb_HTML.png)
+     ![BB84 worksheet spin card for Alice, basis z, bit 0](../images/ch-10/490703_1_En_10_Figb_HTML.png)
 
-     ![](../images/ch-10/490703_1_En_10_Figc_HTML.png)
+     ![BB84 worksheet spin card for Alice, basis x, bit 1](../images/ch-10/490703_1_En_10_Figc_HTML.png)
 
   4. Once you have filled up the chart, tell Bob the basis used for each bit. If Bob tells you to “discard” the bit, cross it out on your chart.
   5. Check to see that you and Bob end up with the same sifted key.
@@ -445,9 +505,9 @@ Before parting ways, you and Alice agree on a key. Using a coin with heads = 0 a
      - If your basis is the same as the card’s, record the bit value.
      - If your basis is different, the output of your Stern-Gerlach apparatus will be random. Randomly pick 0 or 1.
 
-     ![](../images/ch-10/490703_1_En_10_Figd_HTML.png)
+     ![BB84 worksheet spin card for Bob, basis z, bit 0](../images/ch-10/490703_1_En_10_Figd_HTML.png)
 
-     ![](../images/ch-10/490703_1_En_10_Fige_HTML.png)
+     ![BB84 worksheet spin card for Bob, basis x, bit 1](../images/ch-10/490703_1_En_10_Fige_HTML.png)
 
   3. Once you have filled up the chart, Alice will tell you the basis used for each bit. If you measured in a different basis, tell Alice to “discard” the bit and cross it out on your chart.
   4. Check to see that you and Alice end up with the same sifted key.

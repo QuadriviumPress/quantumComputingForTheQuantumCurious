@@ -43,11 +43,11 @@ ARTIFACTS = {
 }
 
 FIGURE_FENCE_RE = re.compile(
-    r"^(`{3,}|:{3,})\{figure\}\s*(\S+)(.*?)^\1",
+    r"^[ \t]*(`{3,}|:{3,})\{figure\}\s*(\S+)(.*?)^[ \t]*\1",
     re.MULTILINE | re.DOTALL,
 )
 LABEL_RE = re.compile(
-    r"(?m)^(?:\(([^)]+)\)=|:label:\s*(\S+)|:name:\s*(\S+)|label:\s*(\S+)|name:\s*(\S+))",
+    r"(?m)^[ \t]*(?:\(([^)]+)\)=|:label:\s*(\S+)|:name:\s*(\S+)|label:\s*(\S+)|name:\s*(\S+))",
 )
 LINK_RE = re.compile(r"\]\(#([^)]+)\)")
 
@@ -161,7 +161,7 @@ def figure_targets(path: Path, text: str) -> list[tuple[Path, bool]]:
     for match in FIGURE_FENCE_RE.finditer(text):
         target = match.group(2)
         body = match.group(3)
-        has_alt = bool(re.search(r"(?m)^:alt:\s*\S+", body))
+        has_alt = bool(re.search(r"(?m)^\s*:alt:\s*\S+", body))
         found.append(((path.parent / target).resolve(), has_alt))
     # Bare image links (including filenames with parentheses)
     for match in re.finditer(r"!\[([^\]]*)\]", text):
