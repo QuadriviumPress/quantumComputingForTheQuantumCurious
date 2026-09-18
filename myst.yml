@@ -23,6 +23,18 @@ project:
   license: CC-BY-4.0
   open_access: true
   github: QuadriviumPress/quantumComputingForTheQuantumCurious
+  error_rules:
+    # External URLs that return 403/404/522 to automated link checkers.
+    - rule: link-resolves
+      severity: ignore
+      keys:
+        - https://qis.fnal.gov/superconducting-quantum-systems/
+        - https://www.jpl.nasa.gov/news/news.php?feature=4384
+        - https://qis.fnal.gov/quantum-teleportation-experiment/
+        - https://qis.fnal.gov/quantum-computing-for-hep/
+        - https://phet.colorado.edu/sims/stern-gerlach/stern-gerlachen.html
+        - https://www.arborsci.com/polarizing-filters.html
+        - http://qttt.rohanp.xyz/
   toc:
     - file: index.md
     - file: chapters/ch-01-introduction-to-superposition.md
