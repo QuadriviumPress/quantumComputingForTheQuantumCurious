@@ -10,7 +10,7 @@ As discussed in Chap. [](#ch-2), information in classical computers is represent
 (sec-6-1)=
 ## 6.1 Single Qubit Gates
 
-Classical computers manipulate bits using classical logic gates such as OR, AND, NOT and NAND. This link[^1] provides a basic review of classical logic gates. Similarly, quantum computers manipulate qubits using quantum gates. The gates are applied to qubits and the states of the qubits change depending on which gate is applied. In the Bloch sphere representation, the gate provides instructions for rotating the qubit’s arrow around the sphere. A quantum algorithm has to be implemented on a quantum computer using quantum gates. After running a quantum algorithm, the result is retrieved by measuring the qubit’s state. The hardware implementation of quantum gates depends on how the qubit and quantum computer has been implemented technologically.[^2] As an example, one could have a qubit based on spin. Then gates could be implemented using an external magnetic field to change the spin and hence the qubit state. This chapter will focus on gates from the computing perspective rather than the engineering perspective. You will learn about several important gates that act on a single qubit, interpret histograms produced by a quantum computer simulator, and use matrices to describe the operation of these gates.
+Classical computers manipulate bits using classical logic gates such as OR, AND, NOT and NAND. This link[^1] provides a basic review of classical logic gates. Similarly, quantum computers manipulate qubits using quantum gates. The gates are applied to qubits and the states of the qubits change depending on which gate is applied. In the Bloch sphere representation, the gate provides instructions for rotating the qubit’s arrow around the sphere. A quantum algorithm has to be implemented on a quantum computer using quantum gates. After running a quantum algorithm, the result is retrieved by measuring the qubit’s state. The hardware implementation of quantum gates depends on how the qubit and quantum computer have been implemented technologically.[^2] As an example, one could have a qubit based on spin. Then gates could be implemented using an external magnetic field to change the spin and hence the qubit state. This chapter will focus on gates from the computing perspective rather than the engineering perspective. You will learn about several important gates that act on a single qubit, interpret histograms produced by a quantum computer simulator, and use matrices to describe the operation of these gates.
 
 (sec-6-2)=
 ## 6.2 *X* (Also Called NOT) Gate
@@ -72,7 +72,7 @@ Applying a Hadamard gate and measuring on the IBM Q machine
 ```
 
 
-The result of running the circuit 100 times is a histogram shown in Fig. [](#fig-6-4). Note that each run is independent: before each measurement, the qubit has to be reset to the |0〉 state and passed through the gate, and then the measurement happens. We repeat this process 1024 times. Each bin in the histogram shows the frequency/probability of measuring |0〉 or |1〉. You can clearly see that applying the Hadamard gate to a single qubit creates a superposition state of both |0〉 and |1〉. The probabilities are not exactly 50∕50 because of statistical error. The more data you collect, the closer the result converges to 50∕50. This is similar to flipping a coin and counting the number of heads or tails; the greater the number of flips, the more likely you are to observe 50∕50 probability of seeing heads/tails.
+The result of running the circuit 1,024 times is a histogram shown in Fig. [](#fig-6-4). Note that each run is independent: before each measurement, the qubit has to be reset to the |0〉 state and passed through the gate, and then the measurement happens. We repeat this process 1024 times. Each bin in the histogram shows the frequency/probability of measuring |0〉 or |1〉. You can clearly see that applying the Hadamard gate to a single qubit creates a superposition state of both |0〉 and |1〉. The probabilities are not exactly 50∕50 because of statistical error. The more data you collect, the closer the result converges to 50∕50. This is similar to flipping a coin and counting the number of heads or tails; the greater the number of flips, the more likely you are to observe 50∕50 probability of seeing heads/tails.
 
 ```{figure} ../images/ch-06/490703_1_En_6_Fig4_HTML.png
 :label: fig-6-4
@@ -84,7 +84,7 @@ Measurement histogram after running the Hadamard gate circuit in Fig. [](#fig-6-
 ```
 
 
-Recall that measurement collapses the superposition. Only one classical state can be observed, and all of the other quantum information is lost. Measurement collapse is the reason why a qubit’s state cannot be duplicated, known as the no-cloning theorem of quantum computing. Once a superposition state is measured, it fundamentally changes into one of the basis states, and hence cannot be duplicated. Still, it is not known how or whether measurement collapse happens.[^6]
+Recall that measurement collapses the superposition. Only one classical state can be observed, and all of the other quantum information is lost. Measurement collapse is the reason why a qubit’s state cannot be duplicated, a result known as the no-cloning theorem of quantum computing. Once a superposition state is measured, it fundamentally changes into one of the basis states, and hence cannot be duplicated. Still, it is not known how or whether measurement collapse happens.[^6]
 
 **Question 1** Create a qubit in the |1〉 state and pass it through a Hadamard gate. From the measurement histogram, can you tell whether the qubit started in a |0〉 or |1〉 initial state?
 
@@ -113,7 +113,7 @@ The Hadamard gate has the following matrix representation:
 H=\frac{1}{\sqrt{2}} \begin{pmatrix} 1 & 1 \\ 1 & -1 \end{pmatrix}.
 ```
 
-Using matrix multiplication we can show that application of the Hadamard gate to an |0〉 initial state puts the qubit into the $(1/\sqrt{2})(|0\rangle + |1\rangle)$ state, also called the |+〉 state:
+Using matrix multiplication we can show that application of the Hadamard gate to a |0〉 initial state puts the qubit into the $(1/\sqrt{2})(|0\rangle + |1\rangle)$ state, also called the |+〉 state:
 
 ```{math}
 :label: eq-6-4
@@ -167,7 +167,7 @@ In the Stern–Gerlach experiment, you learned that the |0〉 and |1〉 states m
    HH|0\rangle =\frac{1}{2} \begin{pmatrix} 1 & 1 \\ 1 & -1 \end{pmatrix} \begin{pmatrix} 1 \\ 1 \end{pmatrix} = \begin{pmatrix} 1 \\ 0 \end{pmatrix}.
    ```
 
-In fact, all quantum gates are reversible as a consequence of the unitary matrix condition. Recall that the gates must be unitary so that the probabilities always add up to 1. Multiplying any unitary matrix by its conjugate transpose will return the identity matrix, i.e., reverses the gate to get the original state by *UU*† = *U*†*U* = 1. The Hadamard matrix is self-unitary, i.e., it is its own conjugate transpose, *U* = *U*†.
+In fact, all quantum gates are reversible as a consequence of the unitary matrix condition. Recall that the gates must be unitary so that the probabilities always add up to 1. Multiplying any unitary matrix by its conjugate transpose will return the identity matrix, thereby reversing the gate to recover the original state by *UU*† = *U*†*U* = 1. The Hadamard matrix is self-unitary, i.e., it is its own conjugate transpose, *U* = *U*†.
 
 (sec-6-5)=
 ## 6.5 *Z* Gate
@@ -226,14 +226,14 @@ Exploring gates on the IBM Quantum Computer [](#sec-10-4).
 4. Assume a qubit represents a light bulb that can be measured as either ON or OFF.
    - (a) The light bulb is originally ON. What gate would you use to turn it OFF?
    - (b) The light bulb is originally ON and passes through a Hadamard gate. What do you measure as the output?
-   - (c) The light bulb is originally ON and passed through two Hadamard gates in series. What do you measure as the output?
+   - (c) The light bulb is originally ON and passes through two Hadamard gates in series. What do you measure as the output?
 5. Explain how the Hadamard gate is implemented in the Stern–Gerlach experiment.
 6. Explain the output of the Mach–Zehnder interferometer using what you learned about Hadamard gates.
 7. Use matrix multiplication to demonstrate
    - (a) The Hadamard gate applied to a |1〉 state qubit turns it into a |−〉.
    - (b) A second Hadamard gate turns it back into the |1〉 state.
    - (c) The output after applying the Hadamard gate twice to a general state |ψ〉 = α|0〉 + β|1〉.
-8. Which of the quantum circuits in the Fig. [](#fig-6-7) would NOT produce the histogram shown in Fig. [](#fig-6-4)?
+8. Which of the quantum circuits in Fig. [](#fig-6-7) would NOT produce the histogram shown in Fig. [](#fig-6-4)?
 
    ```{figure} ../images/ch-06/490703_1_En_6_Fig7_HTML.png
    :label: fig-6-7
@@ -272,8 +272,8 @@ Exploring gates on the IBM Quantum Computer [](#sec-10-4).
 
 [^3]: [https://quantum-computing.ibm.com](https://quantum-computing.ibm.com). It can also be run on IBM’s real quantum computer, but you may have to wait in a queue for the results.
 
-[^4]: Background noise is an event that causes unwanted or incorrect affects on a signal.
+[^4]: Background noise is an event that causes unwanted or incorrect effects on a signal.
 
-[^5]: Noise can also occur in classical computers. Here, it can be because a wire in the computer which holds the 0- or 1-bit breaks and gives the wrong bit value. However, since classical computation has no probability associated with it, a single classical computation can be rerun twice and should give the exact same result. In practice, your computer reruns the same code many times to spot if there has been any errors and chooses the result which occurs most frequently. In this way you do not notice the hardware noise as easily.
+[^5]: Noise can also occur in classical computers. Here, it can be because a wire in the computer which holds the 0- or 1-bit breaks and gives the wrong bit value. However, since classical computation has no probability associated with it, a single classical computation can be rerun twice and should give the exact same result. In practice, your computer reruns the same code many times to spot if there have been any errors and chooses the result which occurs most frequently. In this way you do not notice the hardware noise as easily.
 
 [^6]: [https://en.wikipedia.org/wiki/Measurement_problem](https://en.wikipedia.org/wiki/Measurement_problem).

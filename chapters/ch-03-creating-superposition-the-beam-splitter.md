@@ -5,7 +5,7 @@ label: ch-3
 doi: 10.1007/978-3-030-61601-4_3
 ---
 
-Now that we have explored qubits and the phenomenon of superposition, we can ask the question: how do we know that superposition actually happens? What is the evidence that shows that a quantum particle really does exist in two different locations at this same time while in a quantum superposition? The nature of science means that experiments are constantly updating previous results, so are there other interpretations of the experimental results that can explain the data without the need for superposition? In this chapter we’ll explore the experimental evidence that debunks interpretations other than quantum superposition. Further, while a flipping coin is a simple model of a qubit, it is not very useful for building a quantum computer because it does not exhibit all of the properties of a true quantum superposition. For example, we cannot manipulate the superposition amplitudes. In this chapter, we will study some real physical examples of quantum particles in a superposition containing two states. These examples include a photon in a beam splitter and the Mach–Zehnder interferometer.
+Now that we have explored qubits and the phenomenon of superposition, we can ask the question: how do we know that superposition actually happens? What is the evidence that shows that a quantum particle really does exist in two different locations at the same time while in a quantum superposition? The nature of science means that experiments are constantly updating previous results, so are there other interpretations of the experimental results that can explain the data without the need for superposition? In this chapter we’ll explore the experimental evidence that debunks interpretations other than quantum superposition. Further, while a flipping coin is a simple model of a qubit, it is not very useful for building a quantum computer because it does not exhibit all of the properties of a true quantum superposition. For example, we cannot manipulate the superposition amplitudes. In this chapter, we will study some real physical examples of quantum particles in a superposition containing two states. These examples include a photon in a beam splitter and the Mach–Zehnder interferometer.
 
 (sec-3-1)=
 ## 3.1 Beam Splitter
@@ -34,7 +34,7 @@ A beam splitter reflects 50% of the incident light and transmits 50% of the inci
 ```
 
 
-**Question 1** What would happen if a classical particle such as a soccer ball is randomly kicked at the barrier? Assume the ball can fit through the holes.
+**Question 1** What would happen if a classical particle such as a soccer ball were randomly kicked at the barrier? Assume the ball can fit through the holes.
 
 Experiments demonstrate that light behaves both like a wave (Young’s double-slit experiment) and a particle (photoelectric effect, Compton effect). Classically, light is thought of as a wave consisting of continually oscillating electric and magnetic fields. However, light can also be thought of as a stream of particles called **photons**. Photons have no mass but carry the light’s energy from one point to another at the speed of light. A laser beam is comprised of photons. If you turn down the intensity of your laser, you can even send one photon at a time, as shown in Fig. [](#fig-3-3). As setting up a single photon source and detector requires specialized equipment, we will instead run a simulator to explore the quantum effects of photons.
 
@@ -82,7 +82,7 @@ A single photon is sent at a beam splitter and the outcome is measured with dete
 - (d) Both detector 1 AND detector 2
 - (e) Neither
 
-**Question 5** What does the photon do at the instance it encounters the 50/50 beam splitter?
+**Question 5** What does the photon do at the instant it encounters the 50/50 beam splitter?
 
 - (a) Splits in half. Half the photon is transmitted and half is reflected
 - (b) The whole photon goes through with 50% probability and reflects with 50% probability
@@ -213,9 +213,9 @@ There is hidden information in the superposition state. In the Mach–Zehnder ph
 \frac{1}{\sqrt{2}} \lvert 0\rangle + \frac{1}{\sqrt{2}} \lvert 1\rangle \quad \text{or} \quad \frac{1}{\sqrt{2}} \lvert 0\rangle - \frac{1}{\sqrt{2}} \lvert 1\rangle.
 ```
 
-In these two states the plus or minus signs represents two of the many different phase shifts that are possible. Each different choice of the phase shift depends on how the experimental arrangement is chosen. As you can see, quantum superposition is inextricably linked to wave-particle duality.
+In these two states the plus or minus signs represent two of the many different phase shifts that are possible. Each different choice of the phase shift depends on how the experimental arrangement is chosen. As you can see, quantum superposition is inextricably linked to wave-particle duality.
 
-Furthermore, in the Mach–Zehnder experiment we created a superposition, performed a phase shift and then observed wave interference. These experimental operations are equivalent to mathematically applying matrix/gate operations on a qubit, as we shall see later. As such, the Mach–Zehnder is an example of how we can technologically implement qubits (the photon) and operations (superposition/phase shift, etc) to build a quantum computer.[^5] In quantum computing, people talk about the superposition of states rather than the wave behavior. Yet, as we have seen, both frameworks lead to the same understanding of the Mach–Zehnder interferometer. Later we will use the interferometer to implement a quantum algorithm.
+Furthermore, in the Mach–Zehnder experiment we created a superposition, performed a phase shift and then observed wave interference. These experimental operations are equivalent to mathematically applying matrix/gate operations on a qubit, as we shall see later. As such, the Mach–Zehnder is an example of how we can technologically implement qubits (the photon) and operations (superposition/phase shift, etc.) to build a quantum computer.[^5] In quantum computing, people talk about the superposition of states rather than the wave behavior. Yet, as we have seen, both frameworks lead to the same understanding of the Mach–Zehnder interferometer. Later we will use the interferometer to implement a quantum algorithm.
 
 (sec-3-3)=
 ## 3.3 Big Ideas
@@ -259,7 +259,7 @@ Furthermore, in the Mach–Zehnder experiment we created a superposition, perfor
    - (a) Does the data shown in Fig. [](#fig-3-11) at Δ*t* = 0 support that light is a particle or a wave?
    - (b) Why are there large coincidence counts when Δ*t* ≠ 0? (Hint: Look at the spacing between the peaks.)
 
-4. Using the matrices given in Fig. [](#fig-3-12), show how the superposition state is created by multiplying the beam splitter matrix by initial photon state.
+4. Using the matrices given in Fig. [](#fig-3-12), show how the superposition state is created by multiplying the beam splitter matrix by the initial photon state.
 
    ```{figure} ../images/ch-03/490703_1_En_3_Fig12_HTML.png
    :label: fig-3-12

@@ -5,7 +5,7 @@ label: ch-5
 doi: 10.1007/978-3-030-61601-4_5
 ---
 
-The Internet can be thought of as a channel of information being sent from you to everyone else connected to the Internet. If you wanted to transmit your sensitive information (such as bank account numbers or military secrets) over the Internet, then you have to ensure that only the persons you intend to read your information have access to your sensitive data. Otherwise, everyone would be able to read your information, e.g., access to your bank account details and transfer money out of your account. Therefore, one needs to encrypt any data sent over the Internet. Encryption, in this context, ensures that only the intended sender and receiver can understand any message being sent over an Internet channel.
+The Internet can be thought of as a channel of information being sent from you to everyone else connected to the Internet. If you wanted to transmit your sensitive information (such as bank account numbers or military secrets) over the Internet, then you have to ensure that only the persons you intend to read your information have access to your sensitive data. Otherwise, everyone would be able to read your information, e.g., access your bank account details and transfer money out of your account. Therefore, one needs to encrypt any data sent over the Internet. Encryption, in this context, ensures that only the intended sender and receiver can understand any message being sent over an Internet channel.
 
 (sec-5-1)=
 ## 5.1 Cryptography Fundamentals
@@ -17,7 +17,7 @@ The only type of encryption protocol known to be perfectly secure is the One-Tim
 (sec-5-2)=
 ## 5.2 Classical Cryptography
 
-The way around sharing a secret key in an insecure channel in the majority of online communications is called public key cryptography.[^3] A person called Alice makes two keys such that each key knows that only the other key is related to it (think of the keys as siblings). They are called the private and public key. Alice then gives the public key to everyone in the world but importantly keeps the private key for herself. Anybody else, say Bob, who wants to send a private message to Alice has to encrypt their message with the public key that Alice generated. There are many different types of encryption protocols that one can use. The special part of public key cryptography is that *only* Alice's private key can decrypt the message that was encrypted using its sibling public key. In this way, only Alice can read the message from Bob. As no one else has Alice's private key, no one else can read Bob's message. However, if Bob did not use Alice's public key but used a different public key to encrypt his message, then Alice cannot decrypt that message, as her private key is not a sibling key of the different public key. This whole cryptography scheme relies on the fact that no one can break the encryption protocol. If they could break it, then they could read Alice's message even if they did not have Alice's private key.
+The way around sharing a secret key in an insecure channel in the majority of online communications is called public key cryptography.[^3] A person called Alice makes two keys such that each key knows that only the other key is related to it (think of the keys as siblings). They are called the private and public keys. Alice then gives the public key to everyone in the world but importantly keeps the private key for herself. Anybody else, say Bob, who wants to send a private message to Alice has to encrypt their message with the public key that Alice generated. There are many different types of encryption protocols that one can use. The special part of public key cryptography is that *only* Alice's private key can decrypt the message that was encrypted using its sibling public key. In this way, only Alice can read the message from Bob. As no one else has Alice's private key, no one else can read Bob's message. However, if Bob did not use Alice's public key but used a different public key to encrypt his message, then Alice cannot decrypt that message, as her private key is not a sibling key of the different public key. This whole cryptography scheme relies on the fact that no one can break the encryption protocol. If they could break it, then they could read Alice's message even if they did not have Alice's private key.
 
 The most commonly used modern Internet encryption protocol is RSA encryption. RSA encryption relies on encrypting messages with keys that are made out of very large integers. To break the encryption protocol, an eavesdropper would need to factorize this very large integer into its (prime) factors. Factorizing a large integer into its (prime) factors is known to be a problem that classical computers cannot solve in any reasonable amount of time.[^4] For example, given two large prime numbers *p* and *q*, it takes just a fraction of a second to multiply these two prime numbers together to produce a large integer *c* = *pq*. However, finding the two prime numbers *p* and *q* given just the integer *c* would take a classical supercomputer thousands of years.
 
@@ -47,7 +47,7 @@ The sender (Alice) and receiver (Bob) publicly agree to the relationship between
 2. Alice sends an electron in superposition in the chosen basis through the SGA, measures the spin, and records the corresponding bit value as 0 or 1. The electron is sent to Bob.
 3. Bob randomly chooses either the *x*- or *z*-basis.
 4. Bob measures the spin of the electron and records whether it was 0 or 1.
-5. Repeat steps 1–4 until desired level of security is achieved.
+5. Repeat steps 1–4 until the desired level of security is achieved.
 
 ### 5.3.3 Example
 
@@ -82,7 +82,7 @@ Alice's and Bob's measurements of the BB84 protocol
 (sec-5-4)=
 ## 5.4 Detecting an Eavesdropper
 
-If an eavesdropper (Eve) overhears the post-processing part where Alice and Bob share the basis used for each bit measurement, Eve has no information about whether any bit was either a 0 or 1. As Eve has no information, public post-processing sharing is not a dangerous action for Alice and Bob to take. The only way for Eve to determine the spin value of the qubits, and as a consequence acquire important information, is to measure the qubit with her own Stern–Gerlach *before* it gets to Bob. This can be potentially dangerous for Alice and Bob. However, as the basis is not shared during the transmission, Eve must randomly pick a basis to measure the qubit intercepted from Alice. If Alice and Bob randomly choose to measure in a different basis, they throw away all the bits and it does not matter which basis Eve chooses. If Alice and Bob randomly choose to measure in the same basis then there are two outcomes depending on what Eve does: (1) If Eve randomly chooses the same basis as Alice, then she does not alter the state. This is bad, as Eve has successfully eavesdropped information without Alice and Bob knowing. (2) If Eve randomly chooses a different basis than Alice, then she alters the state and puts it into a superposition. Even though Bob is using the same basis as Alice, due to Eve altering the state, Alice and Bob can have a different spin measurement. This is how they can catch an eavesdropper.
+If an eavesdropper (Eve) overhears the post-processing part where Alice and Bob share the basis used for each bit measurement, Eve has no information about whether any bit was either a 0 or 1. As Eve has no information, public post-processing sharing is not a dangerous action for Alice and Bob to take. The only way for Eve to determine the spin value of the qubits, and as a consequence acquire important information, is to measure the qubit with her own Stern–Gerlach *before* it gets to Bob. This can be potentially dangerous for Alice and Bob. However, as the basis is not shared during the transmission, Eve must randomly pick a basis to measure the qubit intercepted from Alice. If Alice and Bob randomly choose to measure in a different basis, they throw away all the bits and it does not matter which basis Eve chooses. If Alice and Bob randomly choose to measure in the same basis then there are two outcomes depending on what Eve does: (1) If Eve randomly chooses the same basis as Alice, then she does not alter the state. This is bad, as Eve has successfully obtained information by eavesdropping without Alice and Bob knowing. (2) If Eve randomly chooses a different basis than Alice, then she alters the state and puts it into a superposition. Even though Bob is using the same basis as Alice, due to Eve altering the state, Alice and Bob can have a different spin measurement. This is how they can catch an eavesdropper.
 
 ### 5.4.1 Example
 
@@ -105,7 +105,7 @@ When Alice and Bob compare a portion of their key bits, a discrepancy would indi
 
 1. Classical RSA encryption assumes that factoring a large integer into its prime factors is prohibitively difficult. This assumption is true for classical computers, ensuring your information can be safe.
 2. Shor's algorithm on a large and stable quantum computer could factor a large integer into prime factors, making classical encryption vulnerable.
-3. New quantum encryption protocols are developed to keep information safe in the quantum era. The BB84 protocol is one way to share a secret key in a secure channel, that can then be used for encryption.
+3. New quantum encryption protocols are developed to keep information safe in the quantum era. The BB84 protocol is one way to securely share a secret key that can then be used for encryption.
 
 (sec-5-6)=
 ## 5.6 Activities
@@ -120,7 +120,7 @@ For those interested in hands-on experiments, see QuTools[^7]
 ## 5.7 Check Your Understanding
 
 1. If Alice and Bob exchange 1 million bits in order to use the BB84 quantum cryptography protocol, approximately how long will their bit-key string be? Assume they do not check for eavesdropping.
-2. Alice and Bob share their lists of measurement basis, but do not share any more information about the bits. What is the probability that Eve will guess the correct bit for a single bit-key?
+2. Alice and Bob share their lists of measurement bases, but do not share any more information about the bits. What is the probability that Eve will guess the correct bit for a single bit-key?
 3. Alice and Bob perform 20 bit-key measurements but do not share any information about the bits. What is the probability that Eve will guess the correct 20-bit key?
 4. If Eve tries all possible key combinations with the one-time pad, can she crack the one-time pad?
 5. If Eve uses a Stern–Gerlach to measure the spin in between Alice and Bob's measurements, what percentage of the time will she be lucky and get the correct key-bit value without detection?

@@ -7,7 +7,7 @@ doi: 10.1007/978-3-030-61601-4_4
 
 In the previous chapter, we have seen that a photon in an interferometer can be a prototype for a qubit. Might there be any other prototypes for a qubit arising from other particles that we might know? In fact, an electron is another prototype for a qubit. An electron has many measurable properties such as energy, mass, momentum. But, for the purposes of creating a qubit, we want to focus on a property with only two measurable values. An electron has a two-state property which is called **spin**.
 
-Classically, an electron’s spin can be visualized as a rotation about its own axis, like a spinning top or fidget spinner. You learned in high school physics that a moving charge creates a magnetic field according to the right-hand rule. By curling the fingers of your right hand in the direction of the electron’s rotation, your thumb points in the direction of the magnetic field created by the charge. Conceptually, an electron’s spin behaves somewhat like a tiny bar magnet. However, this classical picture is just an analogy. In reality, the quantum mechanical property we call “spin” is intrinsic to the electron (like its mass or charge). The property was called spin because it can be described mathematically just like orbital momentum, but spin does not actually correspond to the electron physically rotating.[^1] Just like a lot of quantum phenomena, spin can be confusing at first. Exploring how the electron can be used as a qubit will provide further intuition into quantum phenomena such as quantum superposition, spin, and measurement.
+Classically, an electron’s spin can be visualized as a rotation about its own axis, like a spinning top or fidget spinner. You learned in high school physics that a moving charge creates a magnetic field according to the right-hand rule. By curling the fingers of your right hand in the direction of the electron’s rotation, your thumb points in the direction of the magnetic field created by the charge. Conceptually, an electron’s spin behaves somewhat like a tiny bar magnet. However, this classical picture is just an analogy. In reality, the quantum mechanical property we call “spin” is intrinsic to the electron (like its mass or charge). The property was called spin because it can be described mathematically just like orbital angular momentum, but spin does not actually correspond to the electron physically rotating.[^1] Just like a lot of quantum phenomena, spin can be confusing at first. Exploring how the electron can be used as a qubit will provide further intuition into quantum phenomena such as quantum superposition, spin, and measurement.
 
 (sec-4-1)=
 ## 4.1 Stern–Gerlach Apparatus
@@ -153,7 +153,7 @@ Let us check these conditions for the *z*-basis, which consists of states $\lver
    ```
 
    A linear combination of $\lvert 0 \rangle$ and $\lvert 1 \rangle$ completely describes the electron’s state.
-2. If you measure the spin as $\lvert 0 \rangle$, it is definitely not $\lvert 1 \rangle$, therefore $\lvert 0 \rangle$ and $\lvert 1 \rangle$ are orthogonal.
+2. If you measure the spin as $\lvert 0 \rangle$, it is definitely not $\lvert 1 \rangle$; therefore, $\lvert 0 \rangle$ and $\lvert 1 \rangle$ are orthogonal.
 
 The same argument can be made for the *x*-basis or any other angle of the SGA (Fig. [](#fig-4-5)).
 
@@ -174,7 +174,7 @@ Geometric representation of the *z*-basis and *x*-basis. The state of a spin up 
 ```
 
 
-Often, there is hidden information about the state that cannot be measured unless we change to a different basis. In the *x*-basis, there is no measurable difference between $\lvert 0 \rangle$ and $\lvert 1 \rangle$. Both the $\lvert 0 \rangle$ qubit and the $\lvert 1 \rangle$ qubit would have measurement results of 50% left and 50% right in the *x*-basis. In the *z*-basis, $\lvert 0 \rangle$ would have 100% probability of being measured up in the Stern–Gerlach and 0% being measured down, while $\lvert 1 \rangle$ would have 0% probability being measured up and 100% down.
+Often, there is hidden information about the state that cannot be measured unless we change to a different basis. In the *x*-basis, there is no measurable difference between $\lvert 0 \rangle$ and $\lvert 1 \rangle$. Both the $\lvert 0 \rangle$ qubit and the $\lvert 1 \rangle$ qubit would have measurement results of 50% left and 50% right in the *x*-basis. In the *z*-basis, $\lvert 0 \rangle$ would have 100% probability of being measured up in the Stern–Gerlach and 0% probability of being measured down, while $\lvert 1 \rangle$ would have 0% probability of being measured up and 100% probability of being measured down.
 
 (sec-4-4)=
 ## 4.4 Effect of Measurement
@@ -230,14 +230,14 @@ Given that only spin up electrons passed through the first SGA, one would expect
 ```{figure} ../images/ch-04/490703_1_En_4_Fig9_HTML.png
 :label: fig-4-9
 
-:alt: The first SGA selects for + *z* spin and the second SGA selects for − *x*. The third SGA shows that by measuring the − *x* in the *z*-basis then the electron is in a superposition of + *z* and − *z*
+:alt: The first SGA selects for + *z* spin and the second SGA selects for − *x*. The third SGA shows that by measuring the − *x* spin in the *z*-basis, the electron is in a superposition of + *z* and − *z*
 
 
-The first SGA selects for + *z* spin and the second SGA selects for − *x*. The third SGA shows that by measuring the − *x* in the *z*-basis then the electron is in a superposition of + *z* and − *z*.
+The first SGA selects for + *z* spin and the second SGA selects for − *x*. The third SGA shows that by measuring the − *x* spin in the *z*-basis, the electron is in a superposition of + *z* and − *z*.
 ```
 
 
-By measuring the electron, we fundamentally changed its state. Measuring the *x*-spin of the qubit puts it into a superposition of up and down, even when it started as up to begin with. When you measure the length of an object with a ruler, you don’t expect the object’s length to change after you measure the it!
+By measuring the electron, we fundamentally changed its state. Measuring the *x*-spin of the qubit puts it into a superposition of up and down, even when it started as up to begin with. When you measure the length of an object with a ruler, you don’t expect the object’s length to change after you measure it!
 
 Quantum measurement collapse is used in many quantum applications such as cryptography, where one could detect if a message has been intercepted. This will be discussed in further detail in Chap. [](#ch-5). Moreover, this property of quantum states implies that a qubit in an unknown state cannot be copied. This concept is known as the no-cloning theorem and has very important consequences. For example, classical computers can make a copy of lines of text and the original version of the text stays the same—there are now two identical copies of the same text. But, if you try to copy an unknown qubit you first have to measure it, which fundamentally alters it by collapsing its superposition state into a basis state. Therefore, since quantum computers cannot copy text as easily as classical computers can, they are unlikely to replace your laptop. However, for certain applications, the information in superposition states allows information processing beyond what is possible in a classical computer. This will be explored more in Chap. [](#ch-9).
 
@@ -245,7 +245,7 @@ Quantum measurement collapse is used in many quantum applications such as crypto
 ## 4.5 Big Ideas
 
 1. An electron has an intrinsic property called spin, which is quantized into two values called spin-up and spin-down.
-2. The measurement basis is important when interpreting results from experiments on quantum states. Two common basis are the *z*-basis (|0〉 and |1〉) and the *x*-basis (|+〉 and |−〉).
+2. The measurement basis is important when interpreting results from experiments on quantum states. Two common bases are the *z*-basis (|0〉 and |1〉) and the *x*-basis (|+〉 and |−〉).
 3. The Stern–Gerlach apparatus (SGA) can be used to put the electron into a superposition state. The electron can be used as a qubit, and the SGA as a way to operate on this qubit. Together, they are a simple model of a quantum computer.
 
 (sec-4-6)=
@@ -286,7 +286,7 @@ Quantum measurement collapse is used in many quantum applications such as crypto
 
    - (a) What is the state of the electron in the *z*-basis? i.e. find *α* and *β* in $\lvert \text{electron} \rangle = \alpha \lvert 0 \rangle + \beta \lvert 1 \rangle$
    - (b) What is the probability of measuring spin up?
-   - (c) What is the state of the electron in the *x*-basis? i.e, find *α* and *β* in $\lvert \text{electron} \rangle = \alpha \lvert + \rangle + \beta \lvert - \rangle$.
+   - (c) What is the state of the electron in the *x*-basis? i.e., find *α* and *β* in $\lvert \text{electron} \rangle = \alpha \lvert + \rangle + \beta \lvert - \rangle$.
    - (d) What is the probability of measuring the spin in the $\lvert - \rangle$ direction?
 
 4. To measure the difference between an electron in a spin state $\frac {1}{\sqrt {2}}\lvert 0\rangle + \frac {1}{\sqrt {2}}\lvert 1\rangle$ and one in $\frac {1}{\sqrt {2}}\lvert 0\rangle - \frac {1}{\sqrt {2}}\lvert 1\rangle$, one could use:

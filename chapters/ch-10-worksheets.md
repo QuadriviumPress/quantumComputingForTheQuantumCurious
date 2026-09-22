@@ -78,7 +78,7 @@ Quantum Tic-Tac-Toe resembles the classical Tic-Tac-Toe game in its setup and ob
 
 ### 10.3.1 The Rules
 
-1. The X player goes first. We note that keeping indices helps to track the game. The markers can be placed in any of the two spaces on the game board (Fig. [](#fig-10-4)).
+1. The X player goes first. We note that keeping indices helps to track the game. The markers can be placed in any two of the spaces on the game board (Fig. [](#fig-10-4)).
 
    ```{figure} ../images/ch-10/490703_1_En_10_Fig4_HTML.png
    :label: fig-10-4
@@ -151,7 +151,7 @@ A player cannot put both markers in the same square.
 ```
 
 
-Other modifications may include assigning different point values for three in a row, such as the winner with lowest sum of the indexes gets 1 point, while the other player gets 1∕2 point.
+Other modifications may include assigning different point values for three in a row, for example, the winner with the lowest sum of the indexes gets 1 point, while the other player gets 1∕2 point.
 
 One of the main challenges of playing the game is to observe when a cycle has been created so the state of the spooky markers can be collapsed at the right time. A computer-simulated game will automatically keep track of this and will force students to collapse their markers, such as this [game simulator](http://qttt.rohanp.xyz/).[^4]
 
@@ -161,11 +161,11 @@ We found that using color codes and connecting lines helps visually track loops.
 
 How are the game rules and principles connected to the real applications of quantum mechanics? There are three major themes that can be drawn from the game: superposition, the effect of measurement, and entanglement.
 
-**Superposition** In classical physics all objects have defined states. However, quantum systems can exist in a superposition of several classical states at the same time. The example could be an electron with a spin that is in superposition of up and down, or a photon in a superposition of vertical and horizontal polarization. QTTT spooky markers exist in two separate locations on the game board, representing their state as a superposition state of two classical TTT markers.
+**Superposition** In classical physics all objects have defined states. However, quantum systems can exist in a superposition of several classical states at the same time. The example could be an electron with a spin that is in a superposition of up and down, or a photon in a superposition of vertical and horizontal polarization. QTTT spooky markers exist in two separate locations on the game board, representing their state as a superposition state of two classical TTT markers.
 
-**Measurement** When measuring the state of a quantum system, the quantum state of a system collapses and only one classical state is observed with some probability. In QTTT, the rule of creating the loop forces players to collapse their markers (measure their quantum state). In this case the player decides how to collapse the markers, which corresponds to the scientist choosing the way of measuring quantum system, such as axis orientation. The rule of forcing the measurement when the loop is created does not have an exact corresponding physical meaning. Quantum systems can exist in a superposition state for an extended time, and the measurement is not forced, but chosen by the observer.
+**Measurement** When the state of a quantum system is measured, the quantum state collapses and only one classical state is observed with some probability. In QTTT, the rule of creating the loop forces players to collapse their markers (measure their quantum state). In this case the player decides how to collapse the markers, which corresponds to the scientist choosing the way of measuring a quantum system, such as axis orientation. The rule of forcing the measurement when the loop is created does not have an exact corresponding physical meaning. Quantum systems can exist in a superposition state for an extended time, and the measurement is not forced, but chosen by the observer.
 
-**Entanglement** Entanglement is the quantum phenomenon of creating two or more particles, whose states cannot be described separately, but have some correlation even when they are separated by a significant distance. When measuring the state of one of the entangled particles, the state of the other particle can be known even without measurement. Einstein called it “spooky action at a distance.” When the players collapse their states after creating a loop in QTTT, they know for sure in which state each marker would collapse into.
+**Entanglement** Entanglement is the quantum phenomenon of creating two or more particles, whose states cannot be described separately, but have some correlation even when they are separated by a significant distance. When the state of one of the entangled particles is measured, the state of the other particle can be known even without measurement. Einstein called it “spooky action at a distance.” When the players collapse their states after creating a loop in QTTT, they know for sure which state each marker would collapse into.
 
 (sec-10-4)=
 ## 10.4 Schrödinger’s Worm Using Five Qubits
@@ -184,7 +184,7 @@ A new experiment on the IBM Q Circuit Composer. Reprint courtesy of Internationa
 ```
 
 
-The default is 5-qubits initialized to the |0⟩ state. Gates can be applied by dragging and dropping them onto the appropriate qubit(s). Don’t forget to add the measurement gate at the end to see the results. When you are satisfied with your circuit, save the experiment and click Run (Fig. [](#fig-10-11)).
+The default is 5 qubits initialized to the |0⟩ state. Gates can be applied by dragging and dropping them onto the appropriate qubit(s). Don’t forget to add the measurement gate at the end to see the results. When you are satisfied with your circuit, save the experiment and click Run (Fig. [](#fig-10-11)).
 
 ```{figure} ../images/ch-10/490703_1_En_10_Fig11_HTML.png
 :label: fig-10-11
@@ -252,7 +252,7 @@ Very dead or alive worms.
 
 1. We send 100 electrons of unknown spin into a Stern-Gerlach apparatus. We measure that 50 are spin up and 50 are spin down. We can conclude that:
    - (a) 100 electrons were in a 50/50 superposition state of up and down (superposition state).
-   - (b) The electrons were a classical mixture of 50 electrons spin up and 50 spin down (mixed state).
+   - (b) The electrons were a classical mixture of 50 electrons with spin up and 50 electrons with spin down (mixed state).
    - (c) Not enough information
 2. Use the simulator (Fig. [](#fig-10-14)) to compare the measurement outcomes of the mixed particles vs. the superposition particles. What are the similarities and differences?
 
@@ -270,7 +270,7 @@ Very dead or alive worms.
 4. Which of the two inputs labelled “Superposition or mixture?” and “Superposition or mixture??” is a random mixture and which is a superposition?
 5. The mixture consists of a fraction *A* of spin up particles and a fraction *B* of spin down particles. Find these fractions, *A* and *B*.
 6. The superposition state can be written as *α*|0⟩ + *β*|1⟩. Find the amplitudes *α* and *β* assuming they are real and positive.
-7. Use a basis change to show that the amplitudes *α* and *β* give the correct probabilities in both the *x*- and *z*- basis.
+7. Use a basis change to show that the amplitudes *α* and *β* give the correct probabilities in both the *x*- and *z*-basis.
 
 (sec-10-6)=
 ## 10.6 Measurement Basis Lab
@@ -404,7 +404,7 @@ Before parting ways, you and Alice agree on a key. Using a coin with heads = 0 a
 
 - Shared Key:
 - **Encoding**:
-  1. Choose a secret letter to send to Alice in binary. (Table [](#tbl-10-2)) Message:
+  1. Choose a secret letter to send to Alice in binary using Table [](#tbl-10-2). Message:
 
      (tbl-10-2)=
      **Table 10.2** One-time pad (Bob)
@@ -489,7 +489,7 @@ Before parting ways, you and Alice agree on a key. Using a coin with heads = 0 a
 
 - SIFTED KEY:
 - **With Eavesdropper**
-  1. Repeat the procedure, but instead of passing the spin card directly to Bob, it will first pass through Eve.
+  1. Repeat the procedure, but instead of passing the spin card directly to Bob, pass it through Eve first.
   2. Compare the sifted key bits one at a time. How can you tell if Eve intercepted the message?
 - SIFTED KEY:
 
@@ -518,7 +518,7 @@ Before parting ways, you and Alice agree on a key. Using a coin with heads = 0 a
 
 - SIFTED KEY:
 - **With Eavesdropper**
-  1. Repeat the procedure, but instead of getting the spin card directly from Alice, it will first pass through Eve.
+  1. Repeat the procedure, but instead of getting the spin card directly from Alice, get it from Eve after it passes through her.
   2. Compare the sifted key bits one at a time. How can you tell if Eve intercepted the message?
 - SIFTED KEY:
 
@@ -533,7 +533,7 @@ Before parting ways, you and Alice agree on a key. Using a coin with heads = 0 a
   2. Receive the spin card from Alice and flip it over.
      - If your basis is the same as the card’s, record the bit value and pass it along to Bob.
      - If your basis is different, the output of your Stern-Gerlach apparatus will be random. Randomly pick 0 or 1 for your bit value, erase Alice’s value, write yours on the card, and pass the card along to Bob.
-  3. Listen in as Alice and Bob compare their basis. If Bob says to “discard” the bit, cross it out on your chart.
+  3. Listen in as Alice and Bob compare their bases. If Bob says to “discard” the bit, cross it out on your chart.
   4. Compare your sifted key to Alice and Bob’s key. Was your eavesdropping successful?
 - SIFTED KEY:
 

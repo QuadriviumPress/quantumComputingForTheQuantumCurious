@@ -10,7 +10,7 @@ So far, we have discussed the manipulation and measurement of a single qubit. Ho
 (sec-7-1)=
 ## 7.1 Entanglement Fundamentals
 
-To provide one example of the strange behavior of entanglement, suppose we have two fair coins. Classically, if you flipped two fair coins many times, you would measure the outcomes HH, HT, TH, or TT, each occurring with a 25% probability. However, by quantum entangling these two fair coins, it is possible to create a state $(1/\sqrt {2})(\lvert HH\rangle + \lvert TT\rangle )$ as illustrated in Fig. [](#fig-7-1). Many other types of entangled states are possible, but this is one famous example called a Bell state. If you flipped this “entangled” pair of coins, they are entangled in such a way that only two measurement outcomes are possible: (1) both coins land on heads; or (2) both coins land on tails; each outcome occurring with 50% probability. You would never see HT or TH!
+To provide one example of the strange behavior of entanglement, suppose we have two fair coins. Classically, if you flipped two fair coins many times, you would measure the outcomes HH, HT, TH, or TT, each occurring with a 25% probability. However, by quantum entangling these two fair coins, it is possible to create a state $(1/\sqrt {2})(\lvert HH\rangle + \lvert TT\rangle )$ as illustrated in Fig. [](#fig-7-1). Many other types of entangled states are possible, but this is one famous example called a Bell state. If you flipped this “entangled” pair of coins, they are entangled in such a way that only two measurement outcomes are possible: (1) both coins land on heads; or (2) both coins land on tails, with each outcome occurring with 50% probability. You would never see HT or TH!
 
 ```{figure} ../images/ch-07/490703_1_En_7_Fig1_HTML.png
 :label: fig-7-1
@@ -22,7 +22,7 @@ Two coins that are entangled in such a way that they either both land on HH or b
 ```
 
 
-Furthermore, if the two entangled coins are separated by thousands of miles, one coin can be flipped and measured. In this case, if the measured coin produced the outcome heads, then we automatically know that the other coin must also land on heads. If the measured coin produced the outcome tails, then we automatically know that the other coin must also land of tails! If this isn’t strange enough, this appears to suggest that the two coins can transmit information instantaneously, and possibly even faster than the speed of light (the fastest speed in the Universe), as shown in Fig. [](#fig-7-2). If the two coins are flipped at the exact same time, somehow the two coins know to land on the same side as the other even though there can be no classical communication between them.
+Furthermore, if the two entangled coins are separated by thousands of miles, one coin can be flipped and measured. In this case, if the measured coin produced the outcome heads, then we automatically know that the other coin must also land on heads. If the measured coin produced the outcome tails, then we automatically know that the other coin must also land on tails! If this isn’t strange enough, this appears to suggest that the two coins can transmit information instantaneously, and possibly even faster than the speed of light (the fastest speed in the Universe), as shown in Fig. [](#fig-7-2). If the two coins are flipped at the exact same time, somehow each coin knows to land on the same side as the other even though there can be no classical communication between them.
 
 ```{figure} ../images/ch-07/490703_1_En_7_Fig2_HTML.png
 :label: fig-7-2
@@ -100,7 +100,7 @@ Non-entangled states are also called product states or separable states because 
 
 ### 7.4.1 Example
 
-One qubit is in a $\alpha_0|0\rangle + \alpha_1|1\rangle$ state, while another is in a $\beta_0|0\rangle + \beta_1|1\rangle$ state. What is the state of the non-interacting two-qubit system?
+One qubit is in an $\alpha_0|0\rangle + \alpha_1|1\rangle$ state, while another is in a $\beta_0|0\rangle + \beta_1|1\rangle$ state. What is the state of the non-interacting two-qubit system?
 
 ```{math}
 
@@ -246,7 +246,7 @@ The other convention, which we will **not** use going forward but provide in cas
    ```
 
 
-   Before the CNOT operation, in ket notation, the control qubit is in the $\frac {1}{\sqrt {2}}\lvert 0\rangle +\frac {1}{\sqrt {2}}\lvert 1\rangle$ state, while the target qubit is in the |0〉 state. The two-qubit input state is therefore $\frac {1}{\sqrt {2}}\lvert 00\rangle +\frac {1}{\sqrt {2}}\lvert 01\rangle$. Applying the rules for the CNOT, the first state |00〉 does not change as the control qubit is |0〉. However, for the second state |01〉, the control qubit is |1〉 and so the target qubit is flipped from |0〉 to |1〉. The result of the CNOT gate is the state $\frac {1}{\sqrt {2}}\lvert 00\rangle +\frac {1}{\sqrt {2}}\lvert 11\rangle$. The histogram from measuring this state is shown in Fig. [](#fig-7-10). This is a special state called the Bell state.
+   Before the CNOT operation, in ket notation, the control qubit is in the $\frac {1}{\sqrt {2}}\lvert 0\rangle +\frac {1}{\sqrt {2}}\lvert 1\rangle$ state, while the target qubit is in the |0〉 state. The two-qubit input state is therefore $\frac {1}{\sqrt {2}}\lvert 00\rangle +\frac {1}{\sqrt {2}}\lvert 01\rangle$. When we apply the rules for the CNOT, the first state |00〉 does not change as the control qubit is |0〉. However, for the second state |01〉, the control qubit is |1〉 and so the target qubit is flipped from |0〉 to |1〉. The result of the CNOT gate is the state $\frac {1}{\sqrt {2}}\lvert 00\rangle +\frac {1}{\sqrt {2}}\lvert 11\rangle$. The histogram from measuring this state is shown in Fig. [](#fig-7-10). This is a special state called the Bell state.
 
    ```{figure} ../images/ch-07/490703_1_En_7_Fig10_HTML.png
    :label: fig-7-10
@@ -265,7 +265,7 @@ The other convention, which we will **not** use going forward but provide in cas
 
 1. Entanglement is the sharing of non-classical information between two or more quantum states. This is caused by quantum states or qubits interacting with each other.
 2. Entanglement is needed to make quantum computers perform calculations which classical computers cannot.
-3. Two-qubit gates act on two different qubits simultaneously and creates entanglement. The controlled NOT (CNOT) gate is frequently used for this purpose.[^7]
+3. Two-qubit gates act on two different qubits simultaneously and create entanglement. The controlled NOT (CNOT) gate is frequently used for this purpose.[^7]
 
 (sec-7-11)=
 ## 7.11 Activities
@@ -279,7 +279,7 @@ For those interested in hands-on experiments, see QuTools[^8]
 (sec-7-12)=
 ## 7.12 Check Your Understanding
 
-1. For each of the questions below, assume that two-qubits start in the state
+1. For each of the questions below, assume that two qubits start in the state
 
    ```{math}
    :label: eq-7-5
@@ -344,7 +344,7 @@ For those interested in hands-on experiments, see QuTools[^8]
 
 [^4]: More recently, it has been shown that there can exist quantum correlations in separable states that are not due to entanglement. These are called quantum discord: [https://en.wikipedia.org/wiki/Quantum_discord](https://en.wikipedia.org/wiki/Quantum_discord).
 
-[^5]: There are ways to test for entanglement without the need to factorise a multi-qubit state into single qubit states. Namely, whether the trace of the density matrix for the subsystem squared is equal to 1. However, the mathematical necessities for this test are outside the scope of this course.
+[^5]: There are ways to test for entanglement without the need to factorise a multi-qubit state into single qubit states. One such way is to determine whether the trace of the square of the density matrix for the subsystem is equal to 1. However, the mathematical necessities for this test are outside the scope of this course.
 
 [^6]: [https://en.wikipedia.org/wiki/Controlled_NOT_gate](https://en.wikipedia.org/wiki/Controlled_NOT_gate).
 
