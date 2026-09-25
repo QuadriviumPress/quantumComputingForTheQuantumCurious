@@ -543,9 +543,9 @@ Before parting ways, you and Alice agree on a key. Using a coin with heads = 0 a
 
 [^1]: [https://www.st-andrews.ac.uk/physics/quvis/simulations_html5/sims/entanglement/entanglement.html](https://www.st-andrews.ac.uk/physics/quvis/simulations_html5/sims/entanglement/entanglement.html).
 
-[^2]: Hoehn R, et al. (2014). “Using Quantum Games to teacher quantum mechanics, Part 1.” *Journal of Chemical Education 91* (3), 417–422. Retrieved from [https://pubs.acs.org/doi/ipdf/10.1021/ed400385k](https://pubs.acs.org/doi/ipdf/10.1021/ed400385k).
+[^2]: Hoehn R, et al. (2014). “Using Quantum Games to teacher quantum mechanics, Part 1.” *Journal of Chemical Education 91* (3), 417–422. Retrieved from [https://doi.org/10.1021/ed400385k](https://doi.org/10.1021/ed400385k).
 
-[^3]: Einstein, Podolsky, and Rosen (1935) “Can quantum-mechanical description of physical reality be considered complete?” *Physical Review, 47*: 777–780. Retrieved from [https://journals.aps.org/pr/pdf/10.1103/PhysRev.47.777](https://journals.aps.org/pr/pdf/10.1103/PhysRev.47.777).
+[^3]: Einstein, Podolsky, and Rosen (1935) “Can quantum-mechanical description of physical reality be considered complete?” *Physical Review, 47*: 777–780. Retrieved from [https://doi.org/10.1103/PhysRev.47.777](https://doi.org/10.1103/PhysRev.47.777).
 
 [^4]: [http://qttt.rohanp.xyz/](http://qttt.rohanp.xyz/).
 
