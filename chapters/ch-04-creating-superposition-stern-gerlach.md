@@ -160,9 +160,9 @@ The same argument can be made for the *x*-basis or any other angle of the SGA (F
 (sec-4-3)=
 ## 4.3 Geometric Representation of a Basis
 
-In this geometric representation of the *z*-basis and *x*-basis, the orthogonal states are drawn perpendicular to one another. If the electron is in a particular state $\lvert 0 \rangle$ in the *z*-basis, the state vector can be decomposed into $1/\sqrt {2}\lvert + \rangle + 1/\sqrt {2}\rangle \lvert - \rangle$ in the *x*-basis. Physically turning the SGA from vertical to horizontal corresponds to changing the measurement from the *z* to the *x*-basis. Since $\lvert 0 \rangle = 1/\sqrt {2}\lvert - \rangle + 1/\sqrt {2}\rangle \lvert - \rangle$, the spin up particle became a 50/50 superposition when the measurement device became horizontal.
+In this geometric representation of the *z*-basis and *x*-basis, the orthogonal states are drawn perpendicular to one another. If the electron is in a particular state $\lvert 0 \rangle$ in the *z*-basis, the state vector can be decomposed into $1/\sqrt {2}\lvert + \rangle + 1/\sqrt {2}\lvert - \rangle$ in the *x*-basis. Physically turning the SGA from vertical to horizontal corresponds to changing the measurement from the *z* to the *x*-basis. Since $\lvert 0 \rangle = 1/\sqrt {2}\lvert + \rangle + 1/\sqrt {2}\lvert - \rangle$, the spin up particle became a 50/50 superposition when the measurement device became horizontal.
 
-**Question 3** Use Fig. [](#fig-4-6) and trigonometry to show that $\lvert 1 \rangle = 1/\sqrt {2}\lvert + \rangle - 1/\sqrt {2}\rangle \lvert -\rangle$.
+**Question 3** Use Fig. [](#fig-4-6) and trigonometry to show that $\lvert 1 \rangle = 1/\sqrt {2}\lvert + \rangle - 1/\sqrt {2}\lvert -\rangle$.
 
 ```{figure} ../images/ch-04/490703_1_En_4_Fig6_HTML.png
 :label: fig-4-6

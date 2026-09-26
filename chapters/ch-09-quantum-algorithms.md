@@ -5,9 +5,9 @@ label: ch-9
 doi: 10.1007/978-3-030-61601-4_9
 ---
 
-We have come a long way from Chap. [](#ch-1). To recap on what we have learnt, we have understood important quantum mechanical phenomena such as superposition and measurement (through the Stern-Gerlach and Mach-Zehnder experiments). We have also learnt that while quantum computers can in principle break classical encryption protocols, they can also be used to make new secure channels of communication. Furthermore, we have applied quantum logic gates to qubits to perform quantum computations. With entanglement, we teleported the information in an unknown qubit to another qubit. This is quite a substantial achievement.
+We have come a long way from Chap. [](#ch-1). To recap on what we have learned, we have understood important quantum mechanical phenomena such as superposition and measurement (through the Stern-Gerlach and Mach-Zehnder experiments). We have also learned that while quantum computers can in principle break classical encryption protocols, they can also be used to make new secure channels of communication. Furthermore, we have applied quantum logic gates to qubits to perform quantum computations. With entanglement, we teleported the information in an unknown qubit to another qubit. This is quite a substantial achievement.
 
-However, we have not yet learned about a fundamental aspect of quantum computing: *quantum algorithms*. Simply put, given a task that we want the quantum computer to perform, a quantum algorithm is how the quantum computer performs this task on some input qubits. One typical example of an algorithm on a classical computer is the search algorithm, e.g., searching a database to find a friend in your friends list. In fact, quantum computers can also implement search algorithms. Grover’s algorithm, one of the two most famous quantum computing algorithms (the other being Shor’s algorithm which we learnt about in Chap. [](#ch-5)), uses entanglement to search a database faster than any classical computer can. While studying Grover’s algorithm is outside the scope of this course, we will study the Deutsch-Jozsa Algorithm that shows how quantum computers can perform calculations faster than classical computers. After studying this algorithm, you will have a basis to learn more complicated algorithms.
+However, we have not yet learned about a fundamental aspect of quantum computing: *quantum algorithms*. Simply put, given a task that we want the quantum computer to perform, a quantum algorithm is how the quantum computer performs this task on some input qubits. One typical example of an algorithm on a classical computer is the search algorithm, e.g., searching a database to find a friend in your friends list. In fact, quantum computers can also implement search algorithms. Grover’s algorithm, one of the two most famous quantum computing algorithms (the other being Shor’s algorithm which we learned about in Chap. [](#ch-5)), uses entanglement to search a database faster than any classical computer can. While studying Grover’s algorithm is outside the scope of this course, we will study the Deutsch-Jozsa Algorithm that shows how quantum computers can perform calculations faster than classical computers. After studying this algorithm, you will have a basis to learn more complicated algorithms.
 
 (sec-9-1)=
 ## 9.1 The Power of Quantum Computing
@@ -29,10 +29,10 @@ If we wanted to compute *f*(*x*) for *x* = 2 (represented as 10 in binary) and *
 ```{figure} ../images/ch-09/490703_1_En_9_Fig2_HTML.png
 :label: fig-9-2
 
-:alt: It takes a classical computer four operations to operate on four pieces of information. A quantum computer with two-qubits can operate on four classical pieces of information at once
+:alt: It takes a classical computer four operations to operate on four pieces of information. A quantum computer with two qubits can operate on four classical pieces of information at once
 
 
-It takes a classical computer four operations to operate on four pieces of information. A quantum computer with two-qubits can operate on four classical pieces of information at once.
+It takes a classical computer four operations to operate on four pieces of information. A quantum computer with two qubits can operate on four classical pieces of information at once.
 ```
 
 
@@ -118,7 +118,7 @@ The Mach-Zehnder interferometer altered to implement the cartoon version of the 
    ```
 
 
-2. Each of the four functions in Table [](#tbl-9-1) can be modelled by a different experimental setup as shown in Fig. [](#fig-9-5). For example, if we wanted to test *f*₁, we would place a piece of glass along the red path but nothing along the yellow path. A photon passing through the glass will experience an additional phase shift of *π*. The reason that this is only a cartoon demonstration is that the phase shifters do not actually implement the function, as we will see in the next section.
+2. Each of the four functions in Table [](#tbl-9-1) can be modeled by a different experimental setup as shown in Fig. [](#fig-9-5). For example, if we wanted to test *f*₁, we would place a piece of glass along the red path but nothing along the yellow path. A photon passing through the glass will experience an additional phase shift of *π*. The reason that this is only a cartoon demonstration is that the phase shifters do not actually implement the function, as we will see in the next section.
 
    ```{figure} ../images/ch-09/490703_1_En_9_Fig5_HTML.png
    :label: fig-9-5
@@ -130,7 +130,7 @@ The Mach-Zehnder interferometer altered to implement the cartoon version of the 
    ```
 
 
-   **Question 4** If *f*₁ is being tested, what is the phase of the yellow path upon reaching the second beamsplitter? The red path photon?
+   **Question 4** If *f*₁ is being tested, what is the phase of the yellow path upon reaching the second beam splitter? The red path photon?
 
    The yellow path was phase-shifted by Beam Splitter 1 and unaffected by the blue function box *f*(0). The red path was unaffected by Beam Splitter 1 and phase-shifted by the blue function box *f*(1). Therefore, they both have a phase shift of *π*.
 
@@ -180,7 +180,7 @@ The quantum circuit for the one qubit Deutsch-Jozsa algorithm. The generic funct
 
 1. As the first step of the algorithm shown in Fig. [](#fig-9-6), get two qubits, and put them into a |0〉|1〉 product state. In the modified Mach-Zehnder experiment above, only the first qubit from Fig. [](#fig-9-6) was shown. The second qubit was hidden in the blue function boxes.
 
-2. Operate on each qubit with the Hadamard gate. Following the rules of the Hadamard gate, the two qubit state is now
+2. Operate on each qubit with the Hadamard gate. Following the rules of the Hadamard gate, the two-qubit state is now
 
    ```{math}
    :label: eq-9-3
@@ -190,7 +190,7 @@ The quantum circuit for the one qubit Deutsch-Jozsa algorithm. The generic funct
 
    In the Mach-Zehnder cartoon in Fig. [](#fig-9-5), Beam splitter 1 performs the first Hadamard gate on the first qubit in Fig. [](#fig-9-6).
 
-3. Apply the function *f*(*x*) using the rule in Eq. ([](#eq-9-2)) to the state in Eq. ([](#eq-9-3)). After performing the arithmetic, the two qubit state can be organised as
+3. Apply the function *f*(*x*) using the rule in Eq. ([](#eq-9-2)) to the state in Eq. ([](#eq-9-3)). After performing the arithmetic, the two-qubit state can be organized as
 
    ```{math}
    :label: eq-9-4
@@ -243,7 +243,7 @@ As this algorithm shows, a single measurement of |0〉 or |1〉 shows whether th
 
 While the Deutsch-Jozsa problem has no known commercial applications, useful quantum algorithms such as Shor’s factoring algorithm rely upon similar concepts. Quantum algorithms are believed to exist that can speed up machine learning algorithms and efficiently simulate the quantum behavior of molecules. As of 2018, companies such as IBM and Google have built different types of quantum computers that contain up to 72 qubits. To give you an idea of where we need quantum computers to be, factoring a 1024-bit modern encryption key using Shor’s algorithm would require more than 5,000 qubits. In 2019, Google claimed to have performed[^4],[^5] the first quantum computation that a classical computer could not do—a milestone known as “quantum supremacy”. Quantum supremacy means that a quantum computer can solve a problem that a classical computer cannot. However, the solution of the problem may not be of practical use. As such, it is important to note that Google has demonstrated quantum supremacy, not the “quantum usefulness” milestone. Google performed their task on a 53-qubit quantum computer, which took 200 s. They claimed it would take a classical computer 10,000 years to do the same task. However, shortly after, IBM suggested[^6] that an improved classical supercomputing technique could theoretically perform the task in just 2.5 days.
 
-Different technological difficulties may be encountered when improving a quantum computer. As we have mentioned, a quantum computer can be built using lasers.[^7] However, there are also random photons outside of the quantum computer in the environment that may accidentally leak into the quantum computer, and these environmental photons can then cause accidental changes to the quantum state. Such accidental changes are called “noise”. To reduce the number of these environmental photons, the quantum computer needs to be cooled down to near absolute zero (around −450° Fahrenheit). However, this is difficult. The more qubits you add, the more you need to keep at this low temperature (a technological challenge). Also, the more qubits you add, the more lasers you need to interact with the qubits. It is technologically difficult to keep lots of qubits in one small space, but also cause isolated interactions between them using different lasers. Further, the more qubits you add, the more likely it is that the qubits will interact accidentally with the environment, which will then destroy the system’s quantum properties through a process known as decoherence. However, given how classical computers went from being the size of a room in the 1960s to an iPhone within a few decades, governments and industries are investing billions of dollars towards making quantum computers realistic. Ultimately, quantum computers are destined to complement classical computers, not replace them, so don’t expect to have a quantum phone in your pocket anytime soon![^8]
+Different technological difficulties may be encountered when improving a quantum computer. As we have mentioned, a quantum computer can be built using lasers.[^7] However, there are also random photons outside of the quantum computer in the environment that may accidentally leak into the quantum computer, and these environmental photons can then cause accidental changes to the quantum state. Such accidental changes are called “noise”. To reduce the number of these environmental photons, the quantum computer needs to be cooled down to near absolute zero (around −450° Fahrenheit). However, this is difficult. The more qubits you add, the more you need to keep at this low temperature (a technological challenge). Also, the more qubits you add, the more lasers you need to interact with the qubits. It is technologically difficult to keep lots of qubits in one small space, but also to cause isolated interactions between them using different lasers. Further, the more qubits you add, the more likely it is that the qubits will interact accidentally with the environment, which will then destroy the system’s quantum properties through a process known as decoherence. However, given how classical computers went from being the size of a room in the 1960s to an iPhone within a few decades, governments and industries are investing billions of dollars towards making quantum computers realistic. Ultimately, quantum computers are destined to complement classical computers, not replace them, so don’t expect to have a quantum phone in your pocket anytime soon![^8]
 
 (sec-9-5)=
 ## 9.5 Big Ideas
@@ -293,7 +293,7 @@ Explore more quantum algorithms from the [IBM quantum textbook](https://qiskit.o
 
 [^1]: It is an observation that classical computers double their processing power roughly every 18 months. This is known as [Moore’s law](https://en.wikipedia.org/wiki/Moore%27s_law).
 
-[^2]: The [Titan](https://www.olcf.ornl.gov/olcf-resources/compute-systems/titan/) at Oak Ridge Laboratory as of 2018.
+[^2]: The [Titan](https://www.olcf.ornl.gov/olcf-resources/compute-systems/titan/) at Oak Ridge National Laboratory as of 2018.
 
 [^3]: When the action of the function *f*₁ on a single qubit is represented as a matrix, this matrix is not unitary. Non-unitarity violates the laws of quantum mechanics.
 

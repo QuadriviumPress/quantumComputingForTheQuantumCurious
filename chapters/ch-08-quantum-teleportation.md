@@ -139,7 +139,7 @@ The way to get around the problem of not being able to measure the qubit (and av
 
 4. Alice now sends the two classical bits of information from the measurements to Bob by email or phone. According to Eq. ([](#eq-8-6)), her measurements can be 00, 10, 01 or 11, each with 25% probability.
 
-Depending on the measurement obtained by Alice, Bob can recover the original state of the teleported qubit (i.e., *a*|0〉 + *b*|1〉) by using a combination of *X* or *Z* gates. The specific combination of *X*∕*Z* gates to use will be explored as a question in Sect. [](#sec-8-4). This situation is illustrated in Fig. [](#fig-8-5). At this stage, the qubit has been successfully teleported from Alice to Bob, and thus the teleportation protocol ends.
+Depending on the measurement obtained by Alice, Bob can recover the original state of the teleported qubit (i.e., *a*|0〉 + *b*|1〉) by using a combination of *X* or *Z* gates. The specific combination of *X*/*Z* gates to use will be explored as a question in Sect. [](#sec-8-4). This situation is illustrated in Fig. [](#fig-8-5). At this stage, the qubit has been successfully teleported from Alice to Bob, and thus the teleportation protocol ends.
 
 ```{figure} ../images/ch-08/490703_1_En_8_Fig5_HTML.png
 :label: fig-8-5

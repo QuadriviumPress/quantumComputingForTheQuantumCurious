@@ -116,7 +116,7 @@ Intuitively, any interaction between two or more qubits will cause the qubits to
 
 Is $\lvert \psi \rangle =\frac {1}{\sqrt {2}}\lvert 00\rangle +\frac {1}{\sqrt {2}}\lvert 11\rangle$ an entangled state?
 
-Yes! To see this, examine qubit #2. The probabilities for measuring qubit #2 in the |0〉 or |1〉 states are originally 50∕50 respectively. However, if we measured qubit #1, then we know what the outcome of measuring qubit #2 will be with 100% certainty. The same argument holds if qubit #2 is measured first. As such, measuring one of the qubits affects the probability of measuring the other qubit in a certain state, and so they are entangled. Mathematically, an entangled state is a special multi-qubit superposition state that cannot be factored into a product of the individual qubits.
+Yes! To see this, examine qubit #2. The probabilities for measuring qubit #2 in the |0〉 or |1〉 states are originally 50/50 respectively. However, if we measured qubit #1, then we know what the outcome of measuring qubit #2 will be with 100% certainty. The same argument holds if qubit #2 is measured first. As such, measuring one of the qubits affects the probability of measuring the other qubit in a certain state, and so they are entangled. Mathematically, an entangled state is a special multi-qubit superposition state that cannot be factored into a product of the individual qubits.
 
 ### 7.5.2 Example
 
@@ -258,7 +258,7 @@ The other convention, which we will **not** use going forward but provide in cas
    ```
 
 
-   The two qubits are entangled after the CNOT! As illustrated in the previous example, this state cannot be written as the product of two separate qubits. As with the single-qubit gates, the CNOT gate operates on ALL states in the superposition, e.g., the CNOT gate acts on the four basis states of a two qubit system simultaneously. Quantum algorithms leverage this parallelism to ensure speed improvements over classical computers. In addition, as with all quantum gates, the CNOT is reversible, meaning the operation can be undone (which can be used to figure out the original qubit states).
+   The two qubits are entangled after the CNOT! As illustrated in the previous example, this state cannot be written as the product of two separate qubits. As with the single-qubit gates, the CNOT gate operates on ALL states in the superposition, e.g., the CNOT gate acts on the four basis states of a two-qubit system simultaneously. Quantum algorithms leverage this parallelism to ensure speed improvements over classical computers. In addition, as with all quantum gates, the CNOT is reversible, meaning the operation can be undone (which can be used to figure out the original qubit states).
 
 (sec-7-10)=
 ## 7.10 Big Ideas
@@ -344,11 +344,11 @@ For those interested in hands-on experiments, see QuTools[^8]
 
 [^4]: More recently, it has been shown that there can exist quantum correlations in separable states that are not due to entanglement. These are called quantum discord: [https://en.wikipedia.org/wiki/Quantum_discord](https://en.wikipedia.org/wiki/Quantum_discord).
 
-[^5]: There are ways to test for entanglement without the need to factorise a multi-qubit state into single qubit states. One such way is to determine whether the trace of the square of the density matrix for the subsystem is equal to 1. However, the mathematical necessities for this test are outside the scope of this course.
+[^5]: There are ways to test for entanglement without the need to factorize a multi-qubit state into single qubit states. One such way is to determine whether the trace of the square of the density matrix for the subsystem is equal to 1. However, the mathematical necessities for this test are outside the scope of this course.
 
 [^6]: [https://en.wikipedia.org/wiki/Controlled_NOT_gate](https://en.wikipedia.org/wiki/Controlled_NOT_gate).
 
-[^7]: In fact, three single qubit gates (the Hadamard, phase, and *π*∕8 phase-rotation) in combination with the CNOT form a universal set of gates, i.e., all other gates can be made up from them.
+[^7]: In fact, three single qubit gates (the Hadamard, phase, and *π*/8 phase-rotation) in combination with the CNOT form a universal set of gates, i.e., all other gates can be made up from them.
 
 [^8]: [https://www.qutools.com/quantum-physics-education-science-kits/](https://www.qutools.com/quantum-physics-education-science-kits/).
 

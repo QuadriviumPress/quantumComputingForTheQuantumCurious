@@ -18,10 +18,10 @@ doi: 10.1007/978-3-030-61601-4_10
 ```{figure} ../images/ch-10/490703_1_En_10_Fig1_HTML.png
 :label: fig-10-1
 
-:alt: Figure reproduced from the [QuVis website](https://www.st-andrews.ac.uk/physics/quvis/), licensed under creative commons CC-BY-NC-SA
+:alt: Figure reproduced from the [QuVis website](https://www.st-andrews.ac.uk/physics/quvis/), licensed under Creative Commons CC-BY-NC-SA
 
 
-Figure reproduced from the [QuVis website](https://www.st-andrews.ac.uk/physics/quvis/), licensed under creative commons CC-BY-NC-SA.
+Figure reproduced from the [QuVis website](https://www.st-andrews.ac.uk/physics/quvis/), licensed under Creative Commons CC-BY-NC-SA.
 ```
 
 
@@ -36,10 +36,10 @@ Now rotate both SGAs along the x-axis (Fig. [](#fig-10-2)).
 ```{figure} ../images/ch-10/490703_1_En_10_Fig2_HTML.png
 :label: fig-10-2
 
-:alt: Figure reproduced from the [QuVis website](https://www.st-andrews.ac.uk/physics/quvis/), licensed under creative commons CC-BY-NC-SA
+:alt: Figure reproduced from the [QuVis website](https://www.st-andrews.ac.uk/physics/quvis/), licensed under Creative Commons CC-BY-NC-SA
 
 
-Figure reproduced from the [QuVis website](https://www.st-andrews.ac.uk/physics/quvis/), licensed under creative commons CC-BY-NC-SA.
+Figure reproduced from the [QuVis website](https://www.st-andrews.ac.uk/physics/quvis/), licensed under Creative Commons CC-BY-NC-SA.
 ```
 
 
@@ -72,7 +72,7 @@ Unpolarized light is sent through a series of polarizing filters.
 (sec-10-3)=
 ## 10.3 Quantum Tic-Tac-Toe
 
-Quantum Tic-Tac-Toe was developed by Alan Goff in 2004 as a metaphor to teach quantum concepts such as superposition, entanglement, and measurement collapse. It has been found to be a helpful strategy in teaching quantum mechanics to undergraduate students at Purdue, especially for students who struggle with grasping the concepts.[^2]
+Quantum Tic-Tac-Toe was developed by Allan Goff in 2004 as a metaphor to teach quantum concepts such as superposition, entanglement, and measurement collapse. It has been found to be a helpful strategy in teaching quantum mechanics to undergraduate students at Purdue, especially for students who struggle with grasping the concepts.[^2]
 
 Quantum Tic-Tac-Toe resembles the classical Tic-Tac-Toe game in its setup and objective of completing three in a row. However, the game uses characteristics of quantum systems, so instead of using one marker *X* or *O*, the players use pairs of *X*s and *O*s, which are traditionally called “spooky,” after Einstein’s reference to entanglement as “spooky action at a distance”.[^3] Using indices for each marker’s move is important when determining the winner of the game. Additionally, we use a color code for each player and connect the spooky markers to help students better visualize the game process. We also number the squares for future reference.
 
@@ -151,7 +151,7 @@ A player cannot put both markers in the same square.
 ```
 
 
-Other modifications may include assigning different point values for three in a row, for example, the winner with the lowest sum of the indexes gets 1 point, while the other player gets 1∕2 point.
+Other modifications may include assigning different point values for three in a row, for example, the winner with the lowest sum of the indexes gets 1 point, while the other player gets 1/2 point.
 
 One of the main challenges of playing the game is to observe when a cycle has been created so the state of the spooky markers can be collapsed at the right time. A computer-simulated game will automatically keep track of this and will force students to collapse their markers, such as this [game simulator](http://qttt.rohanp.xyz/).[^4]
 
@@ -259,15 +259,15 @@ Very dead or alive worms.
    ```{figure} ../images/ch-10/490703_1_En_10_Fig14_HTML.png
    :label: fig-10-14
 
-   :alt: Figure reproduced from the [QuVis website](https://www.st-andrews.ac.uk/physics/quvis/), licensed under creative commons CC-BY-NC-SA
+   :alt: Figure reproduced from the [QuVis website](https://www.st-andrews.ac.uk/physics/quvis/), licensed under Creative Commons CC-BY-NC-SA
 
 
-   Figure reproduced from the [QuVis website](https://www.st-andrews.ac.uk/physics/quvis/), licensed under creative commons CC-BY-NC-SA.
+   Figure reproduced from the [QuVis website](https://www.st-andrews.ac.uk/physics/quvis/), licensed under Creative Commons CC-BY-NC-SA.
    ```
 
 
 3. By making a basis change with $|0\rangle =\frac {1}{\sqrt {2}}|{+}\rangle +\frac {1}{\sqrt {2}}|{-}\rangle$ and $|1\rangle =\frac {1}{\sqrt {2}}|{+}\rangle -\frac {1}{\sqrt {2}}|{-}\rangle$, can you explain the similarities and differences mathematically?
-4. Which of the two inputs labelled “Superposition or mixture?” and “Superposition or mixture??” is a random mixture and which is a superposition?
+4. Which of the two inputs labeled “Superposition or mixture?” and “Superposition or mixture??” is a random mixture and which is a superposition?
 5. The mixture consists of a fraction *A* of spin up particles and a fraction *B* of spin down particles. Find these fractions, *A* and *B*.
 6. The superposition state can be written as *α*|0⟩ + *β*|1⟩. Find the amplitudes *α* and *β* assuming they are real and positive.
 7. Use a basis change to show that the amplitudes *α* and *β* give the correct probabilities in both the *x*- and *z*-basis.
@@ -283,10 +283,10 @@ Very dead or alive worms.
   ```{figure} ../images/ch-10/490703_1_En_10_Fig15_HTML.png
   :label: fig-10-15
 
-  :alt: Figure reproduced from the [PHET Stern-Gerlach Simulator website](https://phet.colorado.edu/sims/stern-gerlach/stern-gerlachen.html), licensed under creative commons CC-BY
+  :alt: Figure reproduced from the [PHET Stern-Gerlach Simulator website](https://phet.colorado.edu/sims/stern-gerlach/stern-gerlachen.html), licensed under Creative Commons CC-BY
 
 
-  Figure reproduced from the [PHET Stern-Gerlach Simulator website](https://phet.colorado.edu/sims/stern-gerlach/stern-gerlach_en.html), licensed under creative commons CC-BY.
+  Figure reproduced from the [PHET Stern-Gerlach Simulator website](https://phet.colorado.edu/sims/stern-gerlach/stern-gerlach_en.html), licensed under Creative Commons CC-BY.
   ```
 
 
@@ -317,8 +317,8 @@ Very dead or alive worms.
 
 5. Do the theoretical probabilities match the simulated data?
 6. What would your scatter plot look like if you sent electrons through with the random *xz* spin option?
-7. What is the theoretical probability of spin down electrons passing through a SGA angled at 45°?
-8. What is the theoretical probability of spin + *x* electrons passing through a SGA angled at 45°?
+7. What is the theoretical probability of spin down electrons passing through an SGA angled at 45°?
+8. What is the theoretical probability of spin + *x* electrons passing through an SGA angled at 45°?
 
 (sec-10-7)=
 ## 10.7 One-Time Pad
@@ -392,7 +392,7 @@ Before parting ways, you and Bob agree on a key. Using a coin with heads = 0 and
   1. Swap cipher texts with another group. How could you recover the original message?
   2. How many different keys would you need to try?
   3. If the original message had five letters instead of one letter, how many different keys would you need to try?
-  4. You intercept a five letter message and, by chance, find a key that decrypts it to read HELLO. What other words could it possibly be?
+  4. You intercept a five-letter message and, by chance, find a key that decrypts it to read HELLO. What other words could it possibly be?
 - **Questions**
   1. Why does adding the key to the cipher recover the original message?
   2. Why is the one-time pad theoretically unbreakable?
@@ -543,7 +543,7 @@ Before parting ways, you and Alice agree on a key. Using a coin with heads = 0 a
 
 [^1]: [https://www.st-andrews.ac.uk/physics/quvis/simulations_html5/sims/entanglement/entanglement.html](https://www.st-andrews.ac.uk/physics/quvis/simulations_html5/sims/entanglement/entanglement.html).
 
-[^2]: Hoehn R, et al. (2014). “Using Quantum Games to teacher quantum mechanics, Part 1.” *Journal of Chemical Education 91* (3), 417–422. Retrieved from [https://doi.org/10.1021/ed400385k](https://doi.org/10.1021/ed400385k).
+[^2]: Hoehn R, et al. (2014). “Using Quantum Games to teach quantum mechanics, Part 1.” *Journal of Chemical Education 91* (3), 417–422. Retrieved from [https://doi.org/10.1021/ed400385k](https://doi.org/10.1021/ed400385k).
 
 [^3]: Einstein, Podolsky, and Rosen (1935) “Can quantum-mechanical description of physical reality be considered complete?” *Physical Review, 47*: 777–780. Retrieved from [https://doi.org/10.1103/PhysRev.47.777](https://doi.org/10.1103/PhysRev.47.777).
 
